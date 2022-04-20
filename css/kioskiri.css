@@ -68,7 +68,7 @@ header nav .menuNavbar li a:hover{
     text-align: center;
     background-image: url(../images/kioskiriFrente2.png);
     background-size: 100% 100%;
-    height: 80vh;
+    height: 51.5rem;
     opacity: 90%;
     background-attachment: fixed;
     display: flex;
@@ -82,12 +82,18 @@ header nav .menuNavbar li a:hover{
     color: white;
     font-size: 3.8rem;
     text-shadow: 0 0 1rem rgb(0 0 0 );
+    animation: efecto_texto 2s;
 }
 
 .heroSection p{
     color: white;
     font-size: 1.7rem;
     text-shadow: 0 0 1rem rgb(0, 0, 0);
+    animation: efecto_texto 2s;
+}
+
+@keyframes efecto_texto {
+    0%{margin-left: -150rem;}
 }
 
 .heroSection a{
@@ -134,6 +140,11 @@ header nav .menuNavbar li a:hover{
     transition: 1s;
 }
 
+.ofertas div div p{
+    font-size: 1.5rem;
+    margin: 0.7rem 0;
+}
+
 .ofertas div div img{
     height: 15rem;
     width: fit-content;
@@ -155,7 +166,6 @@ header nav .menuNavbar li a:hover{
 .productosDestacados{
     grid-area: main;
     height: 26%;
-    margin-top: 1rem;
 }
 
 .productosDestacados h2{
@@ -184,7 +194,7 @@ header nav .menuNavbar li a:hover{
     justify-content: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 3rem 0;
+    margin-bottom: 3rem;
 }
 
 .productosDestacados div div{
@@ -204,7 +214,8 @@ header nav .menuNavbar li a:hover{
 }
 
 .productosDestacados div div p{
-    font-size: 2rem;
+    margin: 0.5rem;
+    font-size: 1.5rem;
 }
 
 .productosDestacados div div .carrito{
@@ -248,7 +259,8 @@ header nav .menuNavbar li a:hover{
 .sobreNosotros h2{
     color: white;
     font-size: 3.8rem;
-    text-shadow: 0 0 1rem rgb(0 0 0 )
+    text-shadow: 0 0 1rem rgb(0 0 0 );
+    animation: efecto_texto 2s;
 }
 
 .sobreNosotros p{
@@ -258,6 +270,7 @@ header nav .menuNavbar li a:hover{
     text-shadow: 0 0 1rem rgb(0, 0, 0);
     width: 70%;
     padding-top: 1rem;
+    animation: efecto_texto 2s;
 }
 
 
