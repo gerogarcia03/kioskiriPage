@@ -243,7 +243,7 @@ header nav .menuNavbar li a:hover{
 /*-------------------SOBRE NOSOTROS----------------*/
 .sobreNosotros{
     font-style: italic;
-    height: 55rem;
+    height: 75vh;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.515), rgba(0, 0, 0, 0.48)), url(../images/kioskiriFrente4.png);
     background-size: 100% 100%;
