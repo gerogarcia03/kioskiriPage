@@ -169,15 +169,13 @@ header nav .menuNavbar li a:hover{
 }
 
 .productosDestacados h2{
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 50px;
     font-weight: bold;
     text-align: center;
     border: 0.1rem solid grey;
     border-bottom: 0;
     border-left: 0;
     border-right: 0;
-    width: 60%;
     font-size: 3rem;
     height: 10rem;
     text-align: center;
@@ -193,7 +191,6 @@ header nav .menuNavbar li a:hover{
     justify-content: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 3rem;
 }
 
 .productosDestacados div div{
@@ -367,14 +364,6 @@ footer div img{
     }
 
 
-
-
-
-    /*-----ofertas----*/
-    .ofertas{
-        padding-top: 65%;
-    }
-
     /*----SobreNosotros-----*/
     .sobreNosotros{
         margin-bottom: 0;
@@ -418,9 +407,7 @@ footer div img{
 
 /*---------------------------------------------------*/
 @media screen and (max-width:600px) {
-
     .container{
-        width: 37.5rem;
         font-size: 0.7rem;
     }
 
@@ -519,10 +506,6 @@ footer div img{
 
 
 @media screen and (max-width: 360px) {
-    .container{
-        width: 360px;
-    }
-
     header{
         width: 360px;
     }
@@ -548,6 +531,7 @@ footer div img{
     
     /*-----HeroSection-----*/
     .heroSection{
+        width: 360px;
         height: 23rem;
     }
 
@@ -564,7 +548,7 @@ footer div img{
 
     /*---ofertas--*/
     .ofertas{
-        width: 360px;
+        width: 360px;        
     }
 
     .ofertas h2{
@@ -603,9 +587,13 @@ footer div img{
     }
 
 
+
+    /*--Footer--*/
     footer{
         width: 360px;
     }
+
+
 }
 
 
