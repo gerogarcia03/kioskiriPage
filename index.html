@@ -8,62 +8,85 @@
     Pasate por nuestro local.">
     <meta name="robots" content="index">
     <meta name="author" content="Gerónimo">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/kioskiri.css" rel="stylesheet" type="text/css">
     <title>Kioskiri Page</title>     
 </head>
 
-<body>
-    <div class="container">
-    <header>
+<body class="container-fluid">
+    <header class="row">
+        <div class="col-xxl-5 col-xl-4 col-lg-5 col-md-4 col-sm-6 col-xs-8">
             <a href="index.html">
-                <img class="logo" src="images/kioskiri2.png">
+            <img class="logo" src="images/kioskiri2.png">
             </a>
-        <nav>
+        </div>
+        <nav class="col-xxl-7 col-xl-8 col-lg-7 col-md-8 col-xs-5">
             <ul class="menuNavbar">
-                <li><a href="pages/productos.html"> PRODUCTOS</a></li>
-                <li><a href="pages/micuenta.html">MI CUENTA</a></li>
-                <li><a href="pages/sobrenosotros.html">SOBRE NOSOTROS </a></li>
-                <li><a href="pages/contactanos.html">CONTACTANOS </a></li>
+                    <li><a href="pages/productos.html"> PRODUCTOS</a></li>
+                    <li><a href="pages/micuenta.html">MI CUENTA</a></li>
+                    <li><a href="pages/micuenta.html">SOBRE NOSOTROS</a></li>
+                    <li><a href="pages/contactanos.html">CONTACTANOS </a></li>
             </ul>
         </nav>
+
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-border-width" viewBox="0 0 16 16">
+                <path d="M0 3.5A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-2zm0 5A.5.5 0 0 1 .5 8h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1zm0 4a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a href="pages/productos.html">Productos</a></li>
+            <li><a href="pages/micuenta.html">Mi Cuenta</a></li>
+            <li><a href="pages/sobrenosotros.html">Sobre Nosotros</a></li>
+            <li><a href="pages/contactanos.html">Contactanos</a></li>
+        </ul>
+      </div>
+
     </header>
     <main class="main">
-        <section class="heroSection">
-            <h2>SOMOS KIOSKIRI</h2>
-            <p>El Kiosko que abre todos los dias.
+        <section class="row">
+            <div class="heroSection">
+                <h2>SOMOS KIOSKIRI</h2>
+                <p>El Kiosko que abre todos los dias.
                 <a href="pages/contactanos.html">Contactanos</a>,que te enviamos tu pedido
                 EN MENOS DE 48HS.
-            </p>
+                </p>
+            </div>
         </section>
-        <section class="ofertas">
-            <h2>OFERTAS</h2>
-            <div>
-                <div>
-                    <img src="images/coca500.png" alt="">
-                    <h3>Coca-Cola 500ml</h3>
-                    <p>$70</p>
-                    <img class="carrito" src="images/carritocompras.png" alt="carrito">
-                    <a href=""></a>
-                </div>
-                <div>
-                    <img src="images/pepsi1lt.png" alt="">
-                    <h3>Pepsi 1lt</h3>
-                    <p>$120</p>
-                    <img class="carrito" src="images/carritocompras.png" alt="carrito">
-                    <a href=""></a>
-                </div>
-                <div>
-                    <img src="images/lays140.png" alt="">
-                    <h3>Papas Lays 140gr</h3>
-                    <p>$80</p>
-                    <img class="carrito" src="images/carritocompras.png" alt="carrito">
-                    <a href=""></a>
+        </div>
+        <section class="row">
+            <div class="ofertas">
+                <h2>OFERTAS</h2>
+                <div class="col-xxl-12">
+                    <div>
+                        <img src="images/coca500.png" alt="">
+                        <h3>Coca-Cola 500ml</h3>
+                        <p>$70</p>
+                        <img class="carrito" src="images/carritocompras.png" alt="carrito">
+                        <a href=""></a>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="images/pepsi1lt.png" alt="">
+                        <h3>Pepsi 1lt</h3>
+                        <p>$120</p>
+                        <img class="carrito" src="images/carritocompras.png" alt="carrito">
+                        <a href=""></a>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="images/lays140.png" alt="">
+                        <h3>Lays 140gr</h3>
+                        <p>$80</p>
+                        <img class="carrito" src="images/carritocompras.png" alt="carrito">
+                        <a href=""></a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer> 
-        <div>      
+    <footer class="row"> 
+        <div class="footer">
+            <div class="col-xxl-2 col-xl-  col-lg-  col-md-3">
             <h4>Redes Sociales</h4>
             <a href="https://www.instagram.com/kioskiri/?hl=es"><img src="images/logoinsta.png" alt=""></a>
             <a href=""><img src="images/twitterlogo.png" alt=""></a>
@@ -73,7 +96,8 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <img class="logoFooter" src="images/kioskiri2.png">
         </div>
+        </div>
     </footer>
-    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
