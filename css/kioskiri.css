@@ -713,6 +713,154 @@ header nav .menuNavbar li a:hover{
 }
 
 
+
+@media screen and (max-width:450px){
+    header .logo{   
+        margin-left: 6.5rem;
+        width: 9rem;
+        height: 7rem;
+    }
+
+    header nav .menuNavbar{
+        display: none;
+    }
+
+    .dropdown{
+        margin-left: 1rem;
+        width: 6rem;
+        visibility: visible;
+    }
+
+    .dropdown .btn{
+        border: 0px;
+        background-color: transparent;
+        margin-right: auto;
+    }
+
+    .dropdown-menu{
+        background-color: rgb(197, 187, 174);
+    }
+
+    .dropdown-menu li a{
+        margin-left: 1rem;
+        background-color: transparent;
+        color: black;
+        text-decoration: none;
+    }
+
+
+
+
+
+    /*--HeroSection--*/
+    .heroSection{
+        width: 360px;
+        height: 23rem;
+    }
+
+    .heroSection h2{
+        font-size: 2rem;
+    }
+
+    .heroSection p{
+        font-size: 1rem;
+    }
+
+
+
+
+    /*---ofertas--*/
+    .ofertas h2{
+        font-size: 2rem;
+    }
+
+    .ofertas div div img{
+        margin-top: 1rem;
+        height: 9rem;
+    }
+
+    .row .ofertas h3{
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .row .ofertas p{
+        margin-top: 0;
+        font-size: 1rem;
+    }
+
+
+
+
+
+    /*--Productos--*/
+    .productosDestacados h2{
+        font-size: 2rem;
+    }   
+
+    .productosDestacados div div img{
+        height: 9rem;
+    }
+
+
+
+
+    /*--contactanos/miCuenta--*/
+    .formulario{
+        width: 24.6rem;
+    }
+
+    .form-control{
+        font-size: 0.8rem;
+        width: 21rem;
+        height: 1.4rem;
+    }
+
+    .inputIngresar{
+        height: 1.6rem;
+        width: fit-content;
+        font-size: 0.8rem;
+    }
+
+    .inputMensaje{
+        width: 21rem;
+        font-size: 0.8rem;
+    }
+
+    /*--SobreNosotros--*/
+    .sobreNosotros{
+        height: 90vh;
+    }
+
+    .sobreNosotros h2{
+        margin-top: -10rem;
+        font-size: 2.2rem;
+    }
+
+    .sobreNosotros p{
+        text-align: center;
+        font-size: 1rem;
+    }
+
+
+
+
+
+    /*--Footer--*/
+    .footer h4{ 
+        font-size: 0.8rem;
+    }
+
+    .bases h2{
+        font-size: 1rem;
+    }
+
+    .bases p{
+        font-size: 0.6rem;
+    }
+}
+
+
 @media screen and (max-width: 360px) {
     header .logo{   
         margin-left: 6.5rem;
@@ -809,19 +957,19 @@ header nav .menuNavbar li a:hover{
         width: 19rem;
     }
 
-    .formulario .form-group .form-control{
+    .form-control{
         font-size: 0.8rem;
         width: 15rem;
         height: 1.4rem;
     }
 
-    .formulario .form-group .inputIngresar{
+    .inputIngresar{
         height: 1.6rem;
         width: fit-content;
         font-size: 0.8rem;
     }
 
-    .formulario .form-group .inputMensaje{
+    .inputMensaje{
         width: 15rem;
         font-size: 0.8rem;
     }
