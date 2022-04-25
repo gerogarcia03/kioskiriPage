@@ -376,6 +376,11 @@ header nav .menuNavbar li a:hover{
 
 
 /*---------------------MEDIA QUERIS--------------------*/
+
+
+
+
+
 @media screen and (max-width: 992px) {
     header{
         height: 8rem;
