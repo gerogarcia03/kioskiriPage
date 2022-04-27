@@ -354,11 +354,6 @@ header nav .navbar-nav li a:hover{
 
 
 /*---------------------MEDIA QUERIS--------------------*/
-
-
-
-
-
 @media screen and (max-width: 992px) {
     header{
         height: 8rem;
@@ -569,10 +564,6 @@ header nav .navbar-nav li a:hover{
 @media screen and (max-width:576px) {
     .container{
         font-size: 0.7rem;
-    }
-    
-    header nav .menuNavbar{
-        display: none;
     }
      
     .dropdown{
