@@ -13,9 +13,9 @@
     <title>Kioskiri Page</title>     
 </head>
 
-<body class="container-fluid">
-    <header class="row">
-    </div>
+<body>
+  <header>
+    <div class="container-fluid">
     <nav class="navbar navbar-light navbar-expand-lg navbar-md navbar-expand-sm navbar-light" style="background-color:rgb(197, 187, 174);">
         <a class="navbar-brand" href="../index.html">
             <img src="../images/kioskiri2.png" width="250" height="130" alt="">
@@ -52,7 +52,7 @@
         </ul>
       </div>
     </header>
-    <main class="main">
+    <!-- <main class="main">
     <section class="row"> 
         <div class="contactanos">
             <form class="formulario">
@@ -65,15 +65,31 @@
                 </fieldset>
             </form>
         </div>
-    </section>
+    </section> -->
+    <main class="form">
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">E-mail</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
     </main>
-    <footer class="row"> 
+
+    <footer> 
         <div class="footer">
-            <div class="col-xxl-2 col-xl-  col-lg-  col-md-3">
             <h4>Redes Sociales</h4>
             <a href="https://www.instagram.com/kioskiri/?hl=es"><img src="../images/logoinsta.png" alt=""></a>
             <a href=""><img src="../images/twitterlogo.png" alt=""></a>
-        </div>
         <div class="bases">
             <h2>Bases y Condiciones</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>

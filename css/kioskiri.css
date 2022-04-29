@@ -3,7 +3,7 @@
     letter-spacing: 2px;
 }
 
-.container{
+body{
     background-color: antiquewhite;
     display: grid;
     grid-template-columns: 1fr;
@@ -24,7 +24,6 @@ header{
     background-color: rgb(197, 187, 174);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     grid-area: header;
 }
 
@@ -36,12 +35,14 @@ header .logo{
 }
 
 header .navbar{
-    background-color: antiquewhite;
+    display: flex;
+    justify-content: end;
 }
-header nav .navbar-nav{
+
+
+header .navbar-nav{
     display: flex;
     align-items: center;
-    justify-content: center;
     list-style: none;
     column-gap: 1rem;
 }
@@ -95,6 +96,7 @@ header nav .navbar-nav li a:hover{
     background-color: antiquewhite;
     grid-area: main;
     padding-top: 1rem;
+    height: 30rem;
 }
 
 .ofertas h2{
@@ -129,7 +131,6 @@ header nav .navbar-nav li a:hover{
 }
 
 .ofertas img{
-    margin-top: 4rem;
     height: 12rem;
     width: fit-content;
 }
@@ -152,6 +153,7 @@ header nav .navbar-nav li a:hover{
 }
 .productosDestacados{
     grid-area: main;
+    height: 120%;
     margin-bottom: 3rem;
 }
 
@@ -277,7 +279,7 @@ header nav .navbar-nav li a:hover{
 
 .formulario{
     text-align: center;
-    margin: 6rem auto;
+    margin: 0rem auto;
     width: 50rem;
     background-color: rgb(197, 187, 174);
 }
@@ -301,8 +303,27 @@ header nav .navbar-nav li a:hover{
     padding: 0.3rem 0.3rem 6rem 0.3rem;
 }
 
+.form{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
 
+form{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 52rem;
+    height: 25rem;
+    color: black;
+    background-color: rgb(197, 187, 174);
+}
 
+.mb-3{
+    padding-left: 2rem;
+}
 
 
 
@@ -326,7 +347,7 @@ header nav .navbar-nav li a:hover{
     font-size: 1.4rem;
 }
 
-.footer div img{
+.footer img{
     margin-top: 0.3rem;
     width: 2.3rem;
     height: 1.5rem;
