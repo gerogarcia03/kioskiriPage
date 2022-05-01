@@ -16,10 +16,10 @@
 <body>
   <header>
     <div class="container-fluid">
-    <nav class="navbar navbar-light navbar-expand-lg navbar-md navbar-expand-sm navbar-light" style="background-color:rgb(197, 187, 174);">
+      <nav class="navbar navbar-light navbar-expand-lg navbar-md navbar-expand-sm navbar-light" style="background-color: rgb(197, 187, 174)">
         <a class="navbar-brand" href="../index.html">
-            <img src="../images/kioskiri2.png" width="250" height="130" alt="">
-          </a>
+          <img class="logo" src="../images/kioskiri2.png" width="250" height="130" alt="">
+        </a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
@@ -32,61 +32,47 @@
               <a class="nav-link" href="../pages/sobrenosotros.html">Sobre Nosotros</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../pages/contactanos.html">Contactanos</a>
-              </li>
+              <a class="nav-link" href="../pages/contactanos.html">Contactanos</a>
+            </li>
           </ul>
         </div>
       </nav>
     </div>
     <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-border-width" viewBox="0 0 16 16">
-                <path d="M0 3.5A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-2zm0 5A.5.5 0 0 1 .5 8h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1zm0 4a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
-            </svg>
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a href="../pages/productos.html">Productos</a></li>
-            <li><a href="../pages/micuenta.html">Mi Cuenta</a></li>
-            <li><a href="../pages/sobrenosotros.html">Sobre Nosotros</a></li>
-            <li><a href="../pages/contactanos.html">Contactanos</a></li>
-        </ul>
-      </div>
-    </header>
-    <!-- <main class="main">
-    <section class="row"> 
-        <div class="contactanos">
-            <form class="formulario">
-                <fieldset class="form-group">
-                    <h2>Contactanos!</h2>
-                    <input class="form-control" type="text" name="Nombre" id="Nombre" placeholder="Ingrese Su Nombre">
-                    <input class="form-control" type="email" name="email" id="email" placeholder="Ingrese su E-mail">                    
-                    <input class="inputMensaje" type="text" name="Mensaje" id="Mensaje" placeholder="Deje su mensaje aqui">
-                    <input class="inputIngresar" type="submit" value="Ingresar">
-                </fieldset>
-            </form>
-        </div>
-    </section> -->
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-border-width" viewBox="0 0 16 16">
+          <path d="M0 3.5A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-2zm0 5A.5.5 0 0 1 .5 8h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1zm0 4a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a href="../pages/productos.html">Productos</a></li>
+        <li><a href="../pages/micuenta.html">Mi Cuenta</a></li>
+        <li><a href="../pages/sobrenosotros.html">Sobre Nosotros</a></li>
+        <li><a href="../pages/contactanos.html">Contactanos</a></li>
+      </ul>
+    </div>
+  </header>
     <main class="form">
     <form>
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">E-mail</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <label for="exampleInputEmail1" class="form-label">Contactanos!</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail/Usuario" aria-describedby="emailHelp">
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
       </div>
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
+        <label for="exampleText1" class="form-label"></label>
+        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Dejá tu Nombre">
       </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      <div class="mb-3">
+        <label for="exampleText1" class="form-label"></label>
+        <input type="text" class="form-control" id="" placeholder="Dejanos un mensaje">
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
     </main>
 
     <footer> 
-        <div class="footer">
+        <div>
             <h4>Redes Sociales</h4>
             <a href="https://www.instagram.com/kioskiri/?hl=es"><img src="../images/logoinsta.png" alt=""></a>
             <a href=""><img src="../images/twitterlogo.png" alt=""></a>
