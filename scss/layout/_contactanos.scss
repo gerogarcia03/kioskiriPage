@@ -1,0 +1,31 @@
+/*-----------CONTACTANOS---------*/
+form{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 52rem;
+    height: 28rem;
+    color: black;
+    background-color: rgb(197, 187, 174);
+}
+.form{
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.mb-3{
+    text-align: center;
+    .form-label{
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+    .form-control{
+        height: 2rem;
+        width: 45rem;
+    }
+    .form-text{
+        margin: 0rem;
+    }
+}

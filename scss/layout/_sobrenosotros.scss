@@ -1,0 +1,51 @@
+/*---------------SOBRE NOSOTROS---------*/
+.sobreNosotros{
+    font-style: italic;
+    height: 75vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.515), rgba(0, 0, 0, 0.48)), url(../images/kioskiriFrente4.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: main;
+    h2{
+        color: white;
+        font-size: 3.8rem;
+        text-shadow: 0 0 1rem rgb(0, 0, 0 );
+        animation: efecto_texto 2s;
+    }
+    p{
+        color: white;
+        font-size: 1.7rem;
+        font-style: italic;
+        text-shadow: 0 0 1rem rgb(0, 0, 0);
+        width: 70%;
+        padding-top: 1rem;
+        animation: efecto_texto 2s;
+    }
+}
+.mapa{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    div{
+        background-color: rgb(197, 187, 174);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        border-radius: 1rem;
+    }
+    iframe{
+        margin: 0.5rem;
+        border-radius: 1rem;
+    }
+    h2{
+        text-align: center;
+        margin: 1rem;
+        font-size: 1.4rem;
+    }
+}

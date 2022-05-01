@@ -1,0 +1,238 @@
+* {
+  font-family: Raleway;
+  margin: 0;
+  padding: 0; }
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #c5bbae;
+  grid-area: footer; }
+  footer div {
+    text-align: center;
+    padding-top: 2rem; }
+  footer h4 {
+    font-size: 1.4rem; }
+  footer img {
+    margin-top: 0.3rem;
+    width: 2.3rem;
+    height: 1.5rem; }
+  footer .bases {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    footer .bases h2 {
+      font-size: 1.5rem; }
+    footer .bases .logoFooter {
+      width: 5rem;
+      height: 3rem; }
+
+header {
+  background-color: #c5bbae;
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: header; }
+  header .navbar-nav {
+    column-gap: 1rem; }
+    header .navbar-nav li a {
+      color: black;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: all 0.3s ease 0s; }
+      header .navbar-nav li a:hover {
+        color: #7e7c7c;
+        font-size: 1.2rem; }
+  header .dropdown {
+    display: none; }
+
+/*----------INDEX---------*/
+.main {
+  grid-area: main;
+  /*--------CAROUSEL---------*/ }
+  .main .carousel-caption h5 {
+    font-size: 3.8rem;
+    text-shadow: 0 0 1rem black;
+    animation: efecto_texto 2s; }
+  .main p {
+    color: white;
+    font-size: 1.7rem;
+    text-shadow: 0 0 1rem black;
+    animation: efecto_texto 2s; }
+
+@keyframes efecto_texto {
+  0% {
+    margin-left: -150rem; } }
+  .main .ofertas {
+    background-color: antiquewhite;
+    padding-top: 1rem;
+    height: 30rem; }
+  .main h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    transition: all 0.3s 0s; }
+    .main h2:hover {
+      font-size: 3.5rem; }
+  .main div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 3rem; }
+    .main div div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: 1s; }
+      .main div div p {
+        font-size: 1.5rem; }
+      .main div div img {
+        height: 12rem;
+        width: fit-content; }
+      .main div div:hover {
+        transform: scale(1.1); }
+      .main div div .carrito {
+        width: 2rem;
+        height: 2rem; }
+
+/*------------PRODUCTOS DESTACADOS---------*/
+.productosDestacados {
+  margin-bottom: 3rem; }
+  .productosDestacados h2 {
+    margin-top: 3rem;
+    font-weight: bold;
+    text-align: center;
+    border: 0.1rem solid grey;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    font-size: 3rem;
+    height: 10rem;
+    text-align: center;
+    transition: all 0.5s ease 0s; }
+    .productosDestacados h2:hover {
+      font-size: 3.5rem; }
+  .productosDestacados div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .productosDestacados div div {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      transition: 1s; }
+      .productosDestacados div div:hover {
+        transform: scale(1.1); }
+      .productosDestacados div div img {
+        height: 11rem;
+        width: fit-content; }
+      .productosDestacados div div h3 {
+        font-size: 1.4rem; }
+      .productosDestacados div div p {
+        margin: 0.5rem;
+        font-size: 1.2rem; }
+      .productosDestacados div div .carrito {
+        height: 2rem;
+        width: 2rem; }
+
+/*---------------SOBRE NOSOTROS---------*/
+.sobreNosotros {
+  font-style: italic;
+  height: 75vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.515), rgba(0, 0, 0, 0.48)), url(../images/kioskiriFrente4.png);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-area: main; }
+  .sobreNosotros h2 {
+    color: white;
+    font-size: 3.8rem;
+    text-shadow: 0 0 1rem black;
+    animation: efecto_texto 2s; }
+  .sobreNosotros p {
+    color: white;
+    font-size: 1.7rem;
+    font-style: italic;
+    text-shadow: 0 0 1rem black;
+    width: 70%;
+    padding-top: 1rem;
+    animation: efecto_texto 2s; }
+
+.mapa {
+  margin: 2rem;
+  display: flex;
+  justify-content: center; }
+  .mapa div {
+    background-color: #c5bbae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    border-radius: 1rem; }
+  .mapa iframe {
+    margin: 0.5rem;
+    border-radius: 1rem; }
+  .mapa h2 {
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.4rem; }
+
+/*----------------TRABAJA CON NOSOTROS---------*/
+.work-us {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin: 3rem; }
+  .work-us .card {
+    display: flex;
+    align-items: center;
+    height: 30rem;
+    background-color: #c5bbae; }
+    .work-us .card .row .img-fluid {
+      height: 30rem; }
+  .work-us .card-body .card-title {
+    margin-bottom: 3rem;
+    font-weight: bold;
+    font-size: 3rem; }
+  .work-us .card-body .card-text {
+    font-weight: 400; }
+    .work-us .card-body .card-text button {
+      font-weight: bold; }
+
+/*-----------CONTACTANOS---------*/
+form {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 52rem;
+  height: 28rem;
+  color: black;
+  background-color: #c5bbae; }
+
+.form {
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center; }
+
+.mb-3 {
+  text-align: center; }
+  .mb-3 .form-label {
+    font-size: 2.5rem;
+    margin-bottom: 3rem; }
+  .mb-3 .form-control {
+    height: 2rem;
+    width: 45rem; }
+  .mb-3 .form-text {
+    margin: 0rem; }

@@ -33,7 +33,7 @@ header .navbar-nav{
 
 header nav .navbar-nav li a{
     color: black;
-    font-size: 1.rem;
+    font-size: 1rem;
     font-weight: bold;
     transition: all 0.3s ease 0s;
 }
@@ -43,7 +43,7 @@ header nav .navbar-nav li a:hover{
     font-size: 1.2rem;
 }
 
-.dropdown{
+header .dropdown{
     display: none;
 }
 
@@ -59,7 +59,7 @@ header nav .navbar-nav li a:hover{
 
 .carousel-caption h5{
     font-size: 3.8rem;
-    text-shadow: 0 0 1rem rgb(0 0 0 );
+    text-shadow: 0 0 1rem rgb(0, 0, 0);
     animation: efecto_texto 2s;
 }
 
@@ -117,7 +117,7 @@ header nav .navbar-nav li a:hover{
     font-size: 1.5rem;
 }
 
-.ofertas img{
+.ofertas div div img{
     height: 12rem;
     width: fit-content;
 }

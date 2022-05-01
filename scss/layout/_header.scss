@@ -1,0 +1,22 @@
+header{
+    background-color: rgb(197, 187, 174);
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: header;
+    .navbar-nav{
+        column-gap: 1rem;
+        li a{
+        color: black;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: all 0.3s ease 0s;
+        &:hover{
+            color: rgb(126, 124, 124);
+            font-size: 1.2rem;
+        }
+    }
+    }
+    .dropdown{
+        display: none;
+    }
+}
