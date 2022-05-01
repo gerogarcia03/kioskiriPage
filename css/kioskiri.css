@@ -1,6 +1,7 @@
 *{
     font-family: Raleway;
-    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -20,7 +21,6 @@ body{
 
 /*--------HEADER--------*/
 header{
-    height: 10rem;
     background-color: rgb(197, 187, 174);
     display: flex;
     flex-wrap: wrap;
@@ -44,14 +44,19 @@ header nav .navbar-nav li a:hover{
 }
 
 .dropdown{
-    visibility: hidden;
+    display: none;
 }
 
 
 
 
 
+
 /*------------HEROSECTION-----------*/
+.main{
+    grid-area: main;
+}
+
 .carousel-caption h5{
     font-size: 3.8rem;
     text-shadow: 0 0 1rem rgb(0 0 0 );
@@ -77,7 +82,6 @@ header nav .navbar-nav li a:hover{
 /*-----------------OFERTAS------------------*/
 .ofertas{
     background-color: antiquewhite;
-    grid-area: main;
     padding-top: 1rem;
     height: 30rem;
 }
@@ -132,7 +136,6 @@ header nav .navbar-nav li a:hover{
 
 /*------------PRODUCTOS--------------*/
 .productosDestacados{
-    grid-area: main;
     margin-bottom: 3rem;
 }
 
@@ -230,7 +233,31 @@ header nav .navbar-nav li a:hover{
     animation: efecto_texto 2s;
 }
 
+.mapa{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+}
 
+.mapa div{
+    background-color: rgb(197, 187, 174);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    border-radius: 1rem;
+}
+
+.mapa iframe{
+    margin: 0.5rem;
+    border-radius: 1rem;
+}
+
+.mapa h2{
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.4rem;
+}
 
 
 
@@ -248,12 +275,8 @@ form{
     background-color: rgb(197, 187, 174);
 }
 
-.contactanos{
-    grid-area: main;
-}
-
 .form{
-    height: 100vh;
+    margin-bottom: 5rem;
     display: flex;
     justify-content: center;
 }
@@ -275,6 +298,51 @@ form{
 .mb-3 .form-text{
     margin: 0rem;
 }
+
+
+
+
+
+
+
+/*---------TRABAJA CON NOSOTROS----------*/
+.work-us{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.work-us .card{
+    display: flex;
+    align-items: center;
+    height: 30rem;
+    background-color: rgb(197, 187, 174);
+}
+
+.work-us .card .row .img-fluid{
+    height: 30rem;
+}
+
+.work-us .card-body .card-title{
+    margin-bottom: 3rem;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.work-us .card-body .card-text{
+    font-weight: 400;
+}
+
+.work-us .card-body .card-text button{
+    font-weight: bold;
+}
+
+
+
+
+
+
 
 
 /*---------------------FOOTER-----------------*/
@@ -388,7 +456,12 @@ footer img{
     .sobreNosotros p{
         font-size: 1.4rem;
     }
+    
 
+
+    .mapa h2{
+        font-size: 1rem;
+    }
 
 
 
@@ -519,19 +592,15 @@ footer img{
 /*---------------------------------------------------*/
 @media screen and (max-width:576px) { 
     /*------HEADER------*/
-    header .navbar .navbar-brand .logo{
-        width: 13rem;
-        margin-left: 11rem;
-    }
     header .navbar-nav{
         display: none;
     }
 
     .dropdown{
+        display: flex;
         position: absolute;
-        top: 9%;
-        left: 65%;
-        visibility: visible;
+        top: 6%;
+        left: 70%;
     }
 
     .dropdown .btn{
@@ -645,7 +714,6 @@ footer img{
 
 @media screen and (max-width:450px){
     header .navbar .navbar-brand .logo{   
-        margin-left: 8rem;
         width: 11rem;
         height: 7rem;
     }
@@ -656,7 +724,6 @@ footer img{
 
     .dropdown{
         width: 6rem;
-        visibility: visible;
     }
 
     .dropdown .btn{
@@ -710,6 +777,35 @@ footer img{
     .productosDestacados div div img{
         height: 9rem;
     }
+
+
+
+    .mapa{
+        margin: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .mapa div{
+        background-color: rgb(197, 187, 174);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        border-radius: 1rem;
+    }
+    
+    .mapa iframe{
+        margin: 1rem;
+        border-radius: 1rem;
+    }
+    
+    .mapa h2{
+        text-align: center;
+        margin: 1rem;
+        font-size: 1rem;
+    }
+
 
 
 
@@ -767,8 +863,11 @@ footer img{
 
 
 @media screen and (max-width: 360px) {
+    header{
+        width: 101%;
+    }
+
     header .navbar .navbar-brand .logo{   
-        margin-left: 5.3rem;
         width: 10rem;
         height: 7rem;
     }
@@ -776,7 +875,6 @@ footer img{
     .dropdown{
         margin-left: 1rem;
         width: 6rem;
-        visibility: visible;
     }
 
     .dropdown .btn{
@@ -798,6 +896,9 @@ footer img{
 
 
 
+    .carousel{
+        width:101%;
+    }
 
 
 
@@ -868,7 +969,11 @@ footer img{
 
 
     /*--Footer--*/
-    .footer h4{ 
+    footer{
+        width: 101%;
+    }
+
+    footer h4{ 
         font-size: 0.8rem;
     }
 
