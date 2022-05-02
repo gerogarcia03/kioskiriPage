@@ -1,0 +1,548 @@
+/*----------MEDIA QUERIS---------*/
+@media screen and (max-width: 992px){
+    /*-------HEROSECTION------*/
+    .carousel-caption h5{
+        font-size: 3.3rem;
+        p{
+            font-size: 1.2rem;
+        }
+    }
+    /*--------OFERTAS-------*/
+    .ofertas{
+        div{
+            div{
+                h3{
+                    font-size: 1.2rem; 
+                }
+            }
+        }
+    }
+    /*----------PRODUCTOS DESTACADOS-------*/
+    .productosDestacados{
+        h2{
+            font-size: 2.5rem;
+        }
+        div{
+            div{
+                margin-bottom: 2rem;
+                h3{
+                    font-size: 1.3rem;  
+                }
+                img{
+                    height: 10rem;
+                    width: fit-content;
+                }
+            }
+        }
+    }
+    .sobreNosotros{
+        margin-bottom: 0;
+        h2{
+            font-size: 3.5rem;
+        }
+        p{
+            font-size: 1.4rem;
+        }
+    }
+    /*---------Footer----------*/
+    footer{
+        h4{
+            font-size: 1.2rem;
+        }
+        .bases{
+            h2{
+                font-size: 1.2rem;
+            }
+            p{
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 768px){
+    header{
+        .navbar{
+            .navbar-brand{
+                img{
+                    width: 12rem;
+                    height: 7.2rem;
+                }
+            }
+        }
+        .navbar-nav{
+            column-gap: 0rem;
+        }
+    }
+    /*------herosection------*/
+    .carousel-caption{
+        h5{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    /*---------ofertas------*/
+    .ofertas{
+        h2{
+            font-size: 2.5rem;
+        }
+        div{
+            div{
+                h3{
+                    margin: 0;
+                    font-size: 1.3rem;
+                }
+                img{
+                    height: 7.6rem;
+                    margin-top: 1rem;  
+                }
+                .carrito{
+                    height: 1.5rem;
+                    width: fit-content;
+                }
+            }
+        }
+    }
+    /*-----------productos destacados------*/
+    .productosDestacados{
+        h2{
+            font-size: 2rem; 
+        }
+        div{
+            div{
+                h3{
+                    font-size: 1.1rem; 
+                }
+                img{
+                    height: 9rem;
+                    width: fit-content;
+                }
+            }
+        }
+    }
+    /*---------sobre nosotros------*/
+    .sobreNosotros{
+        h2{
+            padding-top: 12rem;
+            font-size: 2.8rem;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+    }
+    .mapa{
+        .row{
+            h2{
+                font-size: 1rem; 
+            }
+        }
+    }
+    /*----------trabaja con nosotros---------*/
+    .work-us{
+        height: 100vh;
+        .card{
+            height: 52rem; 
+            .row{
+                .img-fluid{
+                    height: 40rem;
+                }
+            }
+        }
+        .card-body{
+            .card-title{
+                font-size: 2rem;
+            }
+        }
+    }
+    /*------mi cuenta-------*/
+    form{
+        width: 44rem;
+    }
+    .form{
+        .mb-3{
+            .form-control{
+                font-size: 0.9rem;
+                width: 40rem;
+            }
+        }
+    }
+    /*-------footer---------*/
+    footer{
+        div{
+            h4{
+                font-size: 1.2rem;
+            }
+        }
+        .bases{
+            h2{
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px){
+    /*---------header--------*/
+    header{
+        .navbar-nav{
+            display: none;
+        }
+        .dropdown{
+            display: flex;
+            position: absolute;
+            top: 6%;
+            left: 70%;
+            .btn{
+                color: black;
+                border: 0px;
+                background-color: transparent;
+                margin-bottom: 50rem;
+            }
+        }
+        .dropdown-menu{
+            background-color: rgb(197, 187, 174);
+            li{
+                display: flex;
+                a{
+                margin-top: 0.1rem;
+                margin-left: 1rem;
+                background-color: transparent;
+                color: black;
+                text-decoration: none;
+                }
+            }
+        }
+    }
+    /*------herosection------*/
+    .carousel-caption{
+        h5{
+            font-size: 1rem;
+        }
+    }
+    /*----------ofertas---------*/
+    .ofertas{
+        height: 130vh;
+        h2{
+            font-size: 3rem;
+        }
+        div{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            div{
+                h3{
+                    font-size: 0.8rem;
+                }
+                img{
+                    height: 10rem;  
+                }
+            }
+        }
+    }
+    /*---------productos--------*/
+    .productosDestacados{
+        h2{
+            font-size: 2rem;
+        }
+        div{
+            display: flex;
+            flex-direction: column; 
+            div{
+                img{
+                    height: 9rem;
+                    margin-top: 0; 
+                }
+            } 
+        }
+    }
+    /*-----mi cuenta-----*/
+    form{
+        width: 32rem;
+    }
+    .form{
+        .mb-3{
+            .form-control{
+                width: 30rem;
+            }
+        }
+    }
+    /*-------sobre nosotros-------*/
+    .sobreNosotros{
+        height: 90vh;
+        h2{
+            text-align: center;
+            font-size: 3rem; 
+        }
+        p{
+            font-size: 1rem;
+            width: 90%;
+        }
+    }
+    /*-------trabaja con nosotros-----*/
+    .work-us{
+        height: 70rem;
+        .card{
+            height: 70rem;
+        }
+    }
+}
+
+@media screen and (max-width:450px){
+    header{
+        .navbar{
+            .navbar-brand{
+                .img-fluid{
+                    width: 11rem;
+                    height: 7rem;
+                }
+
+            }
+        }
+    }
+    .dropdown{
+        width: 6rem;
+        .btn{
+            border: 0px;
+            background-color: transparent;
+            margin-right: auto;
+        }
+        .menu{
+            background-color: rgb(197, 187, 174);
+            li{
+                a{
+                    margin-left: 1rem;
+                    background-color: transparent;
+                    color: black;
+                    text-decoration: none; 
+                }
+            }
+        }
+    }
+    /*-----------ofertas---------*/
+    .ofertas{
+        h2{
+            font-size: 2rem;
+        }
+        div{
+            div{
+                img{
+                    margin-top: 1rem;
+                    height: 9rem;
+                }
+                h3{
+                    margin: 0;
+                    font-size: 1rem;
+                }
+                p{
+                    margin-top: 0;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    /*-------productos----------*/
+    .productosDestacados{
+        h2{
+            font-size: 2rem; 
+        }
+        div{
+            div{
+                img{
+                    height: 9rem;
+                }
+            }
+        }
+    }
+    .mapa{
+        margin: 1rem;
+        display: flex;
+        justify-content: center;
+        div{
+            background-color: rgb(197, 187, 174);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+            border-radius: 1rem; 
+        }
+        iframe{
+            margin: 1rem;
+            border-radius: 1rem;
+        }
+        h2{
+            text-align: center;
+            margin: 1rem;
+            font-size: 1rem;
+        }
+    }
+    /*---------mi cuenta--------*/
+    form{
+        width: 25rem;
+    }
+    .form{
+        .mb-3{
+            .form-label{
+                font-size: 2rem;
+            }
+            .form-control{
+                width: 22rem;
+            }
+            .form-text{
+                width: 20rem;
+            }
+        }
+    }
+    /*------sobre nosotros--------*/
+    .sobreNosotros{
+        height: 90vh;
+        h2{
+            font-size: 2.2rem;
+        }
+        p{
+            text-align: center;
+            font-size: 1rem;
+        }
+    }
+    /*-----trabaja con nosotros------*/
+    .work-us{
+        .card-body{
+            .card-title{
+                font-size: 1.3rem;
+            }
+            .card-text{
+                font-size: 0.9rem;
+            }
+        }
+    }   
+    /*------footer---------*/
+    footer{
+        h4{
+            font-size: 0.8rem;
+        }
+        .bases{
+            h2{
+                font-size: 1rem;
+            }
+            p{
+                font-size: 0.6rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 360px){
+    /*-----header------*/
+    header{
+        width: 101%;
+        header{
+            .navbar{
+                .navbar-brand{
+                    .img-fluid{
+                        width: 10rem;
+                        height: 7rem;
+                    }
+                }
+            }
+        }
+        .dropdown{
+            margin-left: 1rem;
+            width: 6rem;
+            .btn{
+                border: 0px;
+                background-color: transparent;
+                margin-right: auto;
+            }
+        }
+        .dropdown-menu{
+            background-color: rgb(197, 187, 174);
+            li{
+                a{
+                    margin-left: 1rem;
+                    background-color: transparent;
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    /*-----herosection------*/
+    .carousel{
+        width: 101%;
+    }
+    /*-----ofertas-----*/
+    .ofertas{
+        h2{
+            font-size: 2rem;
+        }
+        div{
+            div{
+                img{
+                    margin-top: 1rem;
+                    height: 9rem;
+                }
+                h3{
+                    margin: 0;
+                    font-size: 1rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    /*-----productos-----*/
+    .productosDestacados{
+        div{
+            div{
+                h2{
+                    font-size: 2rem;
+                }
+                img{
+                    height: 9rem; 
+                }
+            }
+        }
+    }
+    /*-------mi cuenta----*/
+    form{
+        width: 21rem;
+    }
+    .form{
+        .mb-3{
+            .form-control{
+                width: 20rem;    
+            }
+        }
+    }
+    /*-----sobre nosotros------*/
+    .sobreNosotros{
+        height: 90vh;
+        h2{
+            margin-top: -10rem;
+            font-size: 2.2rem; 
+        }
+        p{
+            text-align: center;
+            font-size: 1rem;
+        }
+    }
+    /*------footer----*/
+    footer{
+        width: 101%;
+        h4{
+            font-size: 0.8rem;
+        }
+        .bases{
+            h2{
+                font-size: 1rem;  
+            }
+            p{
+                font-size: 0.6rem;
+            }
+        }
+    }
+}

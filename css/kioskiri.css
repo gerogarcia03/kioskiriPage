@@ -57,13 +57,13 @@ header .dropdown{
     grid-area: main;
 }
 
-.carousel-caption h5{
+.main .carousel-caption h5{
     font-size: 3.8rem;
     text-shadow: 0 0 1rem rgb(0, 0, 0);
     animation: efecto_texto 2s;
 }
 
-.carousel-caption p{
+.main .carousel-caption p{
     color: white;
     font-size: 1.7rem;
     text-shadow: 0 0 1rem rgb(0, 0, 0);
@@ -307,7 +307,6 @@ form{
 
 /*---------TRABAJA CON NOSOTROS----------*/
 .work-us{
-    height: 100vh;
     display: flex;
     justify-content: center;
     margin: 3rem;
@@ -316,12 +315,11 @@ form{
 .work-us .card{
     display: flex;
     align-items: center;
-    height: 30rem;
     background-color: rgb(197, 187, 174);
 }
 
 .work-us .card .row .img-fluid{
-    height: 30rem;
+
 }
 
 .work-us .card-body .card-title{
@@ -371,18 +369,18 @@ footer img{
     height: 1.5rem;
 }
 
-.bases{
+footer .bases{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.bases h2{
+footer .bases h2{
     font-size: 1.5rem;
 }
 
-.bases .logoFooter{
+footer .bases .logoFooter{
     width: 5rem;
     height: 3rem;
 }
@@ -459,22 +457,17 @@ footer img{
     
 
 
-    .mapa h2{
-        font-size: 1rem;
-    }
-
-
 
     /*--Footer--*/
     footer h4{    
         font-size: 1.2rem;
     }
 
-    .bases h2{
+    footer .bases h2{
         font-size: 1.2rem;
     }
 
-    .bases p{
+    footer .bases p{
         font-size: 0.8rem;
     }
 
@@ -484,7 +477,7 @@ footer img{
 
 /*----------------------------------------------------*/
 @media screen and (max-width: 768px){
-    header .navbar .navbar-brand .logo{
+    header .navbar .navbar-brand img{
         width: 12rem;
         height: 7.2rem;
     }
@@ -558,7 +551,25 @@ footer img{
         font-size: 1.2rem;
     }
 
+    .mapa .row h2{
+        font-size: 1rem;
+    }
 
+    /*-------trabaja con nosotros------*/
+    .work-us{
+        height: 100vh;
+    }
+    .work-us .card{
+        height: 52rem;
+    }
+
+    .work-us .card-body .card-title{
+        font-size: 2rem;
+    }
+
+    .work-us .card .row .img-fluid{
+        height: 40rem;
+    }
 
 
     /*--MiCuenta/Contactanos--*/
@@ -579,7 +590,7 @@ footer img{
         font-size: 1.2rem;
     }
 
-    .bases h2{
+    footer .bases h2{
         font-size: 1.2rem;
     }
 
@@ -596,29 +607,29 @@ footer img{
         display: none;
     }
 
-    .dropdown{
+    header .dropdown{
         display: flex;
         position: absolute;
-        top: 6%;
-        left: 70%;
+        top: 7%;
+        left: 60%;
     }
 
-    .dropdown .btn{
+    header .dropdown .btn{
         color: black;
         border: 0px;
         background-color: transparent;
         margin-bottom: 50rem;
     }
 
-    .dropdown-menu{
+    header .dropdown-menu{
         background-color: rgb(197, 187, 174);
     }
      
-    .dropdown-menu li{
+    header .dropdown-menu li{
         display: flex;
     }
 
-    .dropdown-menu li a{
+    header .dropdown-menu li a{
         margin-top: 0.1rem;
         margin-left: 1rem;
         background-color: transparent;
@@ -704,6 +715,16 @@ footer img{
         font-size: 1rem;
         width: 90%;
     }
+
+
+
+    /*---------trabaja con nosotros------*/
+    .work-us{
+        height: 70rem;
+    }
+    .work-us .card{
+        height: 70rem;
+    }
 }
 
 
@@ -711,15 +732,10 @@ footer img{
 
 
 
-
 @media screen and (max-width:450px){
-    header .navbar .navbar-brand .logo{   
+    header .navbar .navbar-brand .img-{   
         width: 11rem;
         height: 7rem;
-    }
-
-    header nav .menuNavbar{
-        display: none;
     }
 
     .dropdown{
@@ -825,7 +841,7 @@ footer img{
         width: 22rem;
     }
 
-    .mb-3 .form-text{
+    .form .mb-3 .form-text{
         width: 20rem;
     }
 
@@ -844,19 +860,25 @@ footer img{
     }
 
 
+    /*------------trabaja con nosotos--------*/
+    .work-us .card-body .card-title{
+        font-size: 1.3rem;
+    }
 
-
+    .work-us .card-body .card-text{
+        font-size: 0.9rem;
+    }
 
     /*--Footer--*/
     footer h4{ 
         font-size: 0.8rem;
     }
 
-    .bases h2{
+    footer .bases h2{
         font-size: 1rem;
     }
 
-    .bases p{
+    footer .bases p{
         font-size: 0.6rem;
     }
 }
@@ -867,27 +889,27 @@ footer img{
         width: 101%;
     }
 
-    header .navbar .navbar-brand .logo{   
+    header .navbar .navbar-brand .img-fluid{   
         width: 10rem;
         height: 7rem;
     }
 
-    .dropdown{
+    header .dropdown{
         margin-left: 1rem;
         width: 6rem;
     }
 
-    .dropdown .btn{
+    header .dropdown .btn{
         border: 0px;
         background-color: transparent;
         margin-right: auto;
     }
 
-    .dropdown-menu{
+    header .dropdown-menu{
         background-color: rgb(197, 187, 174);
     }
 
-    .dropdown-menu li a{
+    header .dropdown-menu li a{
         margin-left: 1rem;
         background-color: transparent;
         color: black;
@@ -977,11 +999,11 @@ footer img{
         font-size: 0.8rem;
     }
 
-    .bases h2{
+    footer .bases h2{
         font-size: 1rem;
     }
 
-    .bases p{
+    footer .bases p{
         font-size: 0.6rem;
     }
 

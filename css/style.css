@@ -3,6 +3,13 @@
   margin: 0;
   padding: 0; }
 
+body {
+  background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr auto 0.1fr;
+  grid-template-areas: "header"   "main" "footer"; }
+
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -57,7 +64,7 @@ header {
     font-size: 3.8rem;
     text-shadow: 0 0 1rem black;
     animation: efecto_texto 2s; }
-  .main p {
+  .main .carousel-caption p {
     color: white;
     font-size: 1.7rem;
     text-shadow: 0 0 1rem black;
@@ -66,37 +73,38 @@ header {
 @keyframes efecto_texto {
   0% {
     margin-left: -150rem; } }
-  .main .ofertas {
-    background-color: antiquewhite;
-    padding-top: 1rem;
-    height: 30rem; }
-  .main h2 {
+
+.ofertas {
+  background-color: antiquewhite;
+  padding-top: 1rem;
+  height: 30rem; }
+  .ofertas h2 {
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
     transition: all 0.3s 0s; }
-    .main h2:hover {
+    .ofertas h2:hover {
       font-size: 3.5rem; }
-  .main div {
+  .ofertas div {
     display: flex;
     justify-content: center;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-end;
     margin-bottom: 3rem; }
-    .main div div {
+    .ofertas div div {
       display: flex;
       flex-direction: column;
       align-items: center;
       transition: 1s; }
-      .main div div p {
+      .ofertas div div:hover {
+        transform: scale(1.1); }
+      .ofertas div div p {
         font-size: 1.5rem; }
-      .main div div img {
+      .ofertas div div img {
         height: 12rem;
         width: fit-content; }
-      .main div div:hover {
-        transform: scale(1.1); }
-      .main div div .carrito {
+      .ofertas div div .carrito {
         width: 2rem;
         height: 2rem; }
 
@@ -236,3 +244,312 @@ form {
     width: 45rem; }
   .mb-3 .form-text {
     margin: 0rem; }
+
+/*----------MEDIA QUERIS---------*/
+@media screen and (max-width: 992px) {
+  /*-------HEROSECTION------*/
+  .carousel-caption h5 {
+    font-size: 3.3rem; }
+    .carousel-caption h5 p {
+      font-size: 1.2rem; }
+  /*--------OFERTAS-------*/
+  .ofertas div div h3 {
+    font-size: 1.2rem; }
+  /*----------PRODUCTOS DESTACADOS-------*/
+  .productosDestacados h2 {
+    font-size: 2.5rem; }
+  .productosDestacados div div {
+    margin-bottom: 2rem; }
+    .productosDestacados div div h3 {
+      font-size: 1.3rem; }
+    .productosDestacados div div img {
+      height: 10rem;
+      width: fit-content; }
+  .sobreNosotros {
+    margin-bottom: 0; }
+    .sobreNosotros h2 {
+      font-size: 3.5rem; }
+    .sobreNosotros p {
+      font-size: 1.4rem; }
+  /*---------Footer----------*/
+  footer h4 {
+    font-size: 1.2rem; }
+  footer .bases h2 {
+    font-size: 1.2rem; }
+  footer .bases p {
+    font-size: 0.8rem; } }
+
+@media screen and (max-width: 768px) {
+  header .navbar .navbar-brand img {
+    width: 12rem;
+    height: 7.2rem; }
+  header .navbar-nav {
+    column-gap: 0rem; }
+  /*------herosection------*/
+  .carousel-caption h5 {
+    font-size: 3rem; }
+  .carousel-caption p {
+    font-size: 1.5rem; }
+  /*---------ofertas------*/
+  .ofertas h2 {
+    font-size: 2.5rem; }
+  .ofertas div div h3 {
+    margin: 0;
+    font-size: 1.3rem; }
+  .ofertas div div img {
+    height: 7.6rem;
+    margin-top: 1rem; }
+  .ofertas div div .carrito {
+    height: 1.5rem;
+    width: fit-content; }
+  /*-----------productos destacados------*/
+  .productosDestacados h2 {
+    font-size: 2rem; }
+  .productosDestacados div div h3 {
+    font-size: 1.1rem; }
+  .productosDestacados div div img {
+    height: 9rem;
+    width: fit-content; }
+  /*---------sobre nosotros------*/
+  .sobreNosotros h2 {
+    padding-top: 12rem;
+    font-size: 2.8rem; }
+  .sobreNosotros p {
+    font-size: 1.2rem; }
+  .mapa .row h2 {
+    font-size: 1rem; }
+  /*----------trabaja con nosotros---------*/
+  .work-us {
+    height: 100vh; }
+    .work-us .card {
+      height: 52rem; }
+      .work-us .card .row .img-fluid {
+        height: 40rem; }
+    .work-us .card-body .card-title {
+      font-size: 2rem; }
+  /*------mi cuenta-------*/
+  form {
+    width: 44rem; }
+  .form .mb-3 .form-control {
+    font-size: 0.9rem;
+    width: 40rem; }
+  /*-------footer---------*/
+  footer div h4 {
+    font-size: 1.2rem; }
+  footer .bases h2 {
+    font-size: 1.2rem; } }
+
+@media screen and (max-width: 576px) {
+  /*---------header--------*/
+  header .navbar-nav {
+    display: none; }
+  header .dropdown {
+    display: flex;
+    position: absolute;
+    top: 6%;
+    left: 70%; }
+    header .dropdown .btn {
+      color: black;
+      border: 0px;
+      background-color: transparent;
+      margin-bottom: 50rem; }
+  header .dropdown-menu {
+    background-color: #c5bbae; }
+    header .dropdown-menu li {
+      display: flex; }
+      header .dropdown-menu li a {
+        margin-top: 0.1rem;
+        margin-left: 1rem;
+        background-color: transparent;
+        color: black;
+        text-decoration: none; }
+  /*------herosection------*/
+  .carousel-caption h5 {
+    font-size: 1rem; }
+  /*----------ofertas---------*/
+  .ofertas {
+    height: 130vh; }
+    .ofertas h2 {
+      font-size: 3rem; }
+    .ofertas div {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .ofertas div div h3 {
+        font-size: 0.8rem; }
+      .ofertas div div img {
+        height: 10rem; }
+  /*---------productos--------*/
+  .productosDestacados h2 {
+    font-size: 2rem; }
+  .productosDestacados div {
+    display: flex;
+    flex-direction: column; }
+    .productosDestacados div div img {
+      height: 9rem;
+      margin-top: 0; }
+  /*-----mi cuenta-----*/
+  form {
+    width: 32rem; }
+  .form .mb-3 .form-control {
+    width: 30rem; }
+  /*-------sobre nosotros-------*/
+  .sobreNosotros {
+    height: 90vh; }
+    .sobreNosotros h2 {
+      text-align: center;
+      font-size: 3rem; }
+    .sobreNosotros p {
+      font-size: 1rem;
+      width: 90%; }
+  /*-------trabaja con nosotros-----*/
+  .work-us {
+    height: 70rem; }
+    .work-us .card {
+      height: 70rem; } }
+
+@media screen and (max-width: 450px) {
+  header .navbar .navbar-brand .img-fluid {
+    width: 11rem;
+    height: 7rem; }
+  .dropdown {
+    width: 6rem; }
+    .dropdown .btn {
+      border: 0px;
+      background-color: transparent;
+      margin-right: auto; }
+    .dropdown .menu {
+      background-color: #c5bbae; }
+      .dropdown .menu li a {
+        margin-left: 1rem;
+        background-color: transparent;
+        color: black;
+        text-decoration: none; }
+  /*-----------ofertas---------*/
+  .ofertas h2 {
+    font-size: 2rem; }
+  .ofertas div div img {
+    margin-top: 1rem;
+    height: 9rem; }
+  .ofertas div div h3 {
+    margin: 0;
+    font-size: 1rem; }
+  .ofertas div div p {
+    margin-top: 0;
+    font-size: 1rem; }
+  /*-------productos----------*/
+  .productosDestacados h2 {
+    font-size: 2rem; }
+  .productosDestacados div div img {
+    height: 9rem; }
+  .mapa {
+    margin: 1rem;
+    display: flex;
+    justify-content: center; }
+    .mapa div {
+      background-color: #c5bbae;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70%;
+      border-radius: 1rem; }
+    .mapa iframe {
+      margin: 1rem;
+      border-radius: 1rem; }
+    .mapa h2 {
+      text-align: center;
+      margin: 1rem;
+      font-size: 1rem; }
+  /*---------mi cuenta--------*/
+  form {
+    width: 25rem; }
+  .form .mb-3 .form-label {
+    font-size: 2rem; }
+  .form .mb-3 .form-control {
+    width: 22rem; }
+  .form .mb-3 .form-text {
+    width: 20rem; }
+  /*------sobre nosotros--------*/
+  .sobreNosotros {
+    height: 90vh; }
+    .sobreNosotros h2 {
+      font-size: 2.2rem; }
+    .sobreNosotros p {
+      text-align: center;
+      font-size: 1rem; }
+  /*-----trabaja con nosotros------*/
+  .work-us .card-body .card-title {
+    font-size: 1.3rem; }
+  .work-us .card-body .card-text {
+    font-size: 0.9rem; }
+  /*------footer---------*/
+  footer h4 {
+    font-size: 0.8rem; }
+  footer .bases h2 {
+    font-size: 1rem; }
+  footer .bases p {
+    font-size: 0.6rem; } }
+
+@media screen and (max-width: 360px) {
+  /*-----header------*/
+  header {
+    width: 101%; }
+    header header .navbar .navbar-brand .img-fluid {
+      width: 10rem;
+      height: 7rem; }
+    header .dropdown {
+      margin-left: 1rem;
+      width: 6rem; }
+      header .dropdown .btn {
+        border: 0px;
+        background-color: transparent;
+        margin-right: auto; }
+    header .dropdown-menu {
+      background-color: #c5bbae; }
+      header .dropdown-menu li a {
+        margin-left: 1rem;
+        background-color: transparent;
+        color: black;
+        text-decoration: none; }
+  /*-----herosection------*/
+  .carousel {
+    width: 101%; }
+  /*-----ofertas-----*/
+  .ofertas h2 {
+    font-size: 2rem; }
+  .ofertas div div img {
+    margin-top: 1rem;
+    height: 9rem; }
+  .ofertas div div h3 {
+    margin: 0;
+    font-size: 1rem; }
+  .ofertas div div p {
+    font-size: 1rem; }
+  /*-----productos-----*/
+  .productosDestacados div div h2 {
+    font-size: 2rem; }
+  .productosDestacados div div img {
+    height: 9rem; }
+  /*-------mi cuenta----*/
+  form {
+    width: 21rem; }
+  .form .mb-3 .form-control {
+    width: 20rem; }
+  /*-----sobre nosotros------*/
+  .sobreNosotros {
+    height: 90vh; }
+    .sobreNosotros h2 {
+      margin-top: -10rem;
+      font-size: 2.2rem; }
+    .sobreNosotros p {
+      text-align: center;
+      font-size: 1rem; }
+  /*------footer----*/
+  footer {
+    width: 101%; }
+    footer h4 {
+      font-size: 0.8rem; }
+    footer .bases h2 {
+      font-size: 1rem; }
+    footer .bases p {
+      font-size: 0.6rem; } }

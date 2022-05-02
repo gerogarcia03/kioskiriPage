@@ -9,8 +9,10 @@
         align-items: center;
         height: 30rem;
         background-color: rgb(197, 187, 174);
-        .row .img-fluid{
+        .row{
+            .img-fluid{
             height: 30rem;
+            }
         }
     }
     .card-body{
