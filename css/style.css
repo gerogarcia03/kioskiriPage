@@ -312,7 +312,6 @@ form {
     width: fit-content; }
   /*---------sobre nosotros------*/
   .sobreNosotros h2 {
-    padding-top: 12rem;
     font-size: 2.8rem; }
   .sobreNosotros p {
     font-size: 1.2rem; }
@@ -382,12 +381,9 @@ form {
   /*---------productos--------*/
   .productosDestacados h2 {
     font-size: 2rem; }
-  .productosDestacados div {
-    display: flex;
-    flex-direction: column; }
-    .productosDestacados div div img {
-      height: 9rem;
-      margin-top: 0; }
+  .productosDestacados div div img {
+    height: 9rem;
+    margin-top: 0; }
   /*-----mi cuenta-----*/
   form {
     width: 32rem; }

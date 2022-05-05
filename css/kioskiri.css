@@ -987,6 +987,23 @@ footer .bases .logoFooter{
     }
 
 
+    .work-us{
+        height: 60rem;
+        width: 16.6rem;
+    }
+
+    .work-us .card{
+        height: 60rem;
+        width: 20rem;
+    }
+    
+    .work-us .card-body .card-title{
+        font-size: 1.2rem;
+    }
+
+    .work-us .card-body .card-text{
+        font-size: 0.8rem;
+    }
 
 
 
