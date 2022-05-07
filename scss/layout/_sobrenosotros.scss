@@ -11,6 +11,10 @@
     align-items: center;
     justify-content: center;
     grid-area: main;
+    $mapa:(
+        color: white,
+        estiloFont: italic,
+    );
     h2{
         color: white;
         font-size: 3.8rem;
@@ -18,9 +22,9 @@
         animation: efecto_texto 2s;
     }
     p{
-        color: white;
+        color: map-get($mapa, color);
         font-size: 1.7rem;
-        font-style: italic;
+        font-style: map-get($mapa,estiloFont);
         text-shadow: 0 0 1rem rgb(0, 0, 0);
         width: 70%;
         padding-top: 1rem;

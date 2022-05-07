@@ -30,9 +30,14 @@
             &:hover{
                 transform: scale(1.1);
             }
+
+            @mixin formateo($alto, $ancho){
+                width: $ancho;
+                height: $alto;
+            }
+
             img{
-                height: 11rem;
-                width: fit-content;
+                @include formateo(11rem, 11rem);
             }
             h3{
                 font-size: 1.4rem;

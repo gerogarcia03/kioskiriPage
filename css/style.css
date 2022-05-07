@@ -13,7 +13,6 @@ body {
 footer {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #c5bbae;
@@ -65,10 +64,7 @@ header {
     text-shadow: 0 0 1rem black;
     animation: efecto_texto 2s; }
   .main .carousel-caption p {
-    color: white;
-    font-size: 1.7rem;
-    text-shadow: 0 0 1rem black;
-    animation: efecto_texto 2s; }
+    font-size: 1.7rem; }
 
 @keyframes efecto_texto {
   0% {
@@ -138,8 +134,8 @@ header {
       .productosDestacados div div:hover {
         transform: scale(1.1); }
       .productosDestacados div div img {
-        height: 11rem;
-        width: fit-content; }
+        width: 11rem;
+        height: 11rem; }
       .productosDestacados div div h3 {
         font-size: 1.4rem; }
       .productosDestacados div div p {
@@ -237,6 +233,12 @@ form {
 .mb-3 {
   text-align: center; }
   .mb-3 .form-label {
+    background-color: rgba(165, 42, 42, 0.281); }
+  .mb-3 .form-control {
+    background-color: antiquewhite; }
+  .mb-3 .form-text {
+    background-color: white; }
+  .mb-3 .form-label {
     font-size: 2.5rem;
     margin-bottom: 3rem; }
   .mb-3 .form-control {
@@ -248,9 +250,9 @@ form {
 /*----------MEDIA QUERIS---------*/
 @media screen and (max-width: 992px) {
   /*-------HEROSECTION------*/
-  .carousel-caption h5 {
+  .carousel-caption h5, .main .carousel-caption p h5 {
     font-size: 3.3rem; }
-    .carousel-caption h5 p {
+    .carousel-caption h5 p, .main .carousel-caption p h5 p {
       font-size: 1.2rem; }
   /*--------OFERTAS-------*/
   .ofertas div div h3 {
@@ -286,9 +288,9 @@ form {
   header .navbar-nav {
     column-gap: 0rem; }
   /*------herosection------*/
-  .carousel-caption h5 {
+  .carousel-caption h5, .main .carousel-caption p h5 {
     font-size: 3rem; }
-  .carousel-caption p {
+  .carousel-caption p, .main .carousel-caption p p {
     font-size: 1.5rem; }
   /*---------ofertas------*/
   .ofertas h2 {
@@ -363,7 +365,7 @@ form {
         color: black;
         text-decoration: none; }
   /*------herosection------*/
-  .carousel-caption h5 {
+  .carousel-caption h5, .main .carousel-caption p h5 {
     font-size: 1rem; }
   /*----------ofertas---------*/
   .ofertas {

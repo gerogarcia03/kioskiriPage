@@ -10,11 +10,8 @@
             animation: efecto_texto 2s;
         }
         p{
-            color: white;
+            @extend .carousel-caption;
             font-size: 1.7rem;
-            text-shadow: 0 0 1rem rgb(0, 0, 0);
-            animation: efecto_texto 2s;  
-        
         }
     }
     @keyframes efecto_texto {
