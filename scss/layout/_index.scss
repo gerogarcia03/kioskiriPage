@@ -66,16 +66,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3rem;
+    margin: 5rem 0;
     .card{
         display: flex;
         align-items: center;
         justify-content:center;
         height: 30rem;
         background-color: rgb(197, 187, 174);
+        border-radius: 1rem;
         .row{
             .img-fluid{
-            height: 30rem;
+                height: 30rem;
             }
         }
     }

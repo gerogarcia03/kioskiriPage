@@ -112,13 +112,14 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3rem; }
+  margin: 5rem 0; }
   .work-us .card {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 30rem;
-    background-color: #c5bbae; }
+    background-color: #c5bbae;
+    border-radius: 1rem; }
     .work-us .card .row .img-fluid {
       height: 30rem; }
   .work-us .card-body .card-title {
