@@ -35,6 +35,7 @@
             }
         }
     }
+    /*-------------SOBRE NOSOTROS---------*/
     .sobreNosotros{
         margin-bottom: 0;
         h2{
@@ -44,6 +45,25 @@
             font-size: 1.4rem;
         }
     }
+    /*--------PREGUNTAS------*/
+    .accordion{
+        .text{
+            text-align: center;
+            width: 60rem;
+            font-size: 2.5rem;
+        }
+        .accordion-item{
+            width: 60rem;
+            .accordion-header{
+                .accordion-button{
+                    width: 60rem;
+                }
+            }
+        }
+    }
+
+
+
     /*---------Footer----------*/
     footer{
         h4{
@@ -169,6 +189,23 @@
             }
         }
     }
+    /*--------preguntas-------*/
+    .accordion{
+        .text{
+            width: 40rem;
+        }
+        .accordion-item{
+            width: 40rem;
+            .accordion-header{
+                .accordion-button{
+                    width: 40rem;
+                }
+            }
+        }
+    }
+
+    
+
     /*-------footer---------*/
     footer{
         div{
@@ -279,6 +316,24 @@
             width: 90%;
         }
     }
+    /*---------preguntas-------*/
+    .accordion{
+        .text{
+            font-size: 2rem;
+            width: 33rem;
+        }
+        .accordion-item{
+            width: 33rem;
+            .accordion-header{
+                .accordion-button{
+                    width: 33rem;
+                }
+            }
+        }
+    }
+
+
+    
     /*-------trabaja con nosotros-----*/
     .work-us{
         height: 70rem;
@@ -404,6 +459,24 @@
             font-size: 1rem;
         }
     }
+    /*-------preguntas--------*/
+    .accordion{
+        .text{
+            font-size: 1.8rem;
+            width: 25rem;
+        }
+        .accordion-item{
+            font-size: 0.9rem;
+            width: 25rem;
+            .accordion-header{
+                .accordion-button{
+                    font-size: 0.9rem;
+                    width: 25rem;
+                }
+            }
+        }
+    }
+
     /*-----trabaja con nosotros------*/
     .work-us{
         .card-body{
@@ -527,6 +600,23 @@
             font-size: 1rem;
         }
     }
+    /*----------preguntas---------*/
+    .accordion{
+        .text{
+            font-size: 1.5rem;
+            width: 20rem;
+        }
+        .accordion-item{
+            width: 20rem;
+            .accordion-header{
+                .accordion-button{
+                    width: 20rem;
+                }
+            }
+        }
+    }
+
+
     /*------footer----*/
     footer{
         width: 101%;

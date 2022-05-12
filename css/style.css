@@ -1,5 +1,8 @@
+@font-face {
+  font-family: Goldplay;
+  src: url("Goldplay.ttf"); }
+
 * {
-  font-family: Raleway;
   margin: 0;
   padding: 0; }
 
@@ -104,6 +107,31 @@ header {
         width: 2rem;
         height: 2rem; }
 
+/*----------------TRABAJA CON NOSOTROS---------*/
+.work-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem; }
+  .work-us .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+    background-color: #c5bbae; }
+    .work-us .card .row .img-fluid {
+      height: 30rem; }
+  .work-us .card-body .card-title {
+    margin-bottom: 3rem;
+    font-weight: bold;
+    font-size: 3rem; }
+  .work-us .card-body .card-text {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem; }
+    .work-us .card-body .card-text button {
+      font-weight: bold; }
+
 /*------------PRODUCTOS DESTACADOS---------*/
 .productosDestacados {
   margin-bottom: 3rem; }
@@ -173,45 +201,44 @@ header {
     animation: efecto_texto 2s; }
 
 .mapa {
-  margin: 2rem;
+  margin: 2rem 0rem;
   display: flex;
+  align-items: center;
   justify-content: center; }
   .mapa div {
-    background-color: #c5bbae;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 70%;
-    border-radius: 1rem; }
-  .mapa iframe {
-    margin: 0.5rem;
-    border-radius: 1rem; }
-  .mapa h2 {
-    text-align: center;
-    margin: 1rem;
-    font-size: 1.4rem; }
-
-/*----------------TRABAJA CON NOSOTROS---------*/
-.work-us {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  margin: 3rem; }
-  .work-us .card {
+    background-color: #c5bbae;
+    border-radius: 1rem;
     display: flex;
-    align-items: center;
-    height: 30rem;
-    background-color: #c5bbae; }
-    .work-us .card .row .img-fluid {
-      height: 30rem; }
-  .work-us .card-body .card-title {
+    align-items: center; }
+    .mapa div iframe {
+      margin: 0.5rem;
+      border-radius: 1rem; }
+    .mapa div div {
+      display: flex;
+      flex-direction: column; }
+      .mapa div div h2 {
+        text-align: center;
+        margin: 3rem;
+        font-size: 1.4rem; }
+
+/*----------------PREGUNTAS FRECUENTES---------------*/
+.accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  height: 80vh; }
+  .accordion .text {
     margin-bottom: 3rem;
-    font-weight: bold;
     font-size: 3rem; }
-  .work-us .card-body .card-text {
-    font-weight: 400; }
-    .work-us .card-body .card-text button {
-      font-weight: bold; }
+  .accordion .accordion-item {
+    margin: 0.4rem;
+    background-color: #c5bbae;
+    width: 80rem; }
+    .accordion .accordion-item .accordion-header .accordion-button {
+      background-color: #c5bbae;
+      width: 80rem; }
 
 /*-----------CONTACTANOS---------*/
 form {
@@ -267,12 +294,22 @@ form {
     .productosDestacados div div img {
       height: 10rem;
       width: fit-content; }
+  /*-------------SOBRE NOSOTROS---------*/
   .sobreNosotros {
     margin-bottom: 0; }
     .sobreNosotros h2 {
       font-size: 3.5rem; }
     .sobreNosotros p {
       font-size: 1.4rem; }
+  /*--------PREGUNTAS------*/
+  .accordion .text {
+    text-align: center;
+    width: 60rem;
+    font-size: 2.5rem; }
+  .accordion .accordion-item {
+    width: 60rem; }
+    .accordion .accordion-item .accordion-header .accordion-button {
+      width: 60rem; }
   /*---------Footer----------*/
   footer h4 {
     font-size: 1.2rem; }
@@ -334,6 +371,13 @@ form {
   .form .mb-3 .form-control {
     font-size: 0.9rem;
     width: 40rem; }
+  /*--------preguntas-------*/
+  .accordion .text {
+    width: 40rem; }
+  .accordion .accordion-item {
+    width: 40rem; }
+    .accordion .accordion-item .accordion-header .accordion-button {
+      width: 40rem; }
   /*-------footer---------*/
   footer div h4 {
     font-size: 1.2rem; }
@@ -400,6 +444,14 @@ form {
     .sobreNosotros p {
       font-size: 1rem;
       width: 90%; }
+  /*---------preguntas-------*/
+  .accordion .text {
+    font-size: 2rem;
+    width: 33rem; }
+  .accordion .accordion-item {
+    width: 33rem; }
+    .accordion .accordion-item .accordion-header .accordion-button {
+      width: 33rem; }
   /*-------trabaja con nosotros-----*/
   .work-us {
     height: 70rem; }
@@ -475,6 +527,16 @@ form {
     .sobreNosotros p {
       text-align: center;
       font-size: 1rem; }
+  /*-------preguntas--------*/
+  .accordion .text {
+    font-size: 1.8rem;
+    width: 25rem; }
+  .accordion .accordion-item {
+    font-size: 0.9rem;
+    width: 25rem; }
+    .accordion .accordion-item .accordion-header .accordion-button {
+      font-size: 0.9rem;
+      width: 25rem; }
   /*-----trabaja con nosotros------*/
   .work-us .card-body .card-title {
     font-size: 1.3rem; }
@@ -542,6 +604,14 @@ form {
     .sobreNosotros p {
       text-align: center;
       font-size: 1rem; }
+  /*----------preguntas---------*/
+  .accordion .text {
+    font-size: 1.5rem;
+    width: 20rem; }
+  .accordion .accordion-item {
+    width: 20rem; }
+    .accordion .accordion-item .accordion-header .accordion-button {
+      width: 20rem; }
   /*------footer----*/
   footer {
     width: 101%; }

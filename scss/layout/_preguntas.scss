@@ -1,0 +1,23 @@
+/*----------------PREGUNTAS FRECUENTES---------------*/
+.accordion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    height: 80vh;
+    .text{
+        margin-bottom: 3rem;
+        font-size: 3rem;
+    }
+    .accordion-item{
+        margin: 0.4rem;
+        background-color: #c5bbae;
+        width: 80rem;
+        .accordion-header{
+            .accordion-button{
+                background-color: #c5bbae;
+                width: 80rem;
+            }
+        }
+    }
+}
