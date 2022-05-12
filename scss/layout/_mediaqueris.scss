@@ -45,6 +45,23 @@
             font-size: 1.4rem;
         }
     }
+
+    .mapa{
+        margin-left: 1rem;
+        width: 60rem;
+        div{
+            width: 60rem;
+            iframe{
+                margin: 0.5rem;
+                border-radius: 1rem;
+            }               
+            div{
+                h2{
+                }
+            }
+        }
+    }
+
     /*--------PREGUNTAS------*/
     .accordion{
         .text{
@@ -153,10 +170,28 @@
             font-size: 1.2rem;
         }
     }
+
     .mapa{
-        .row{
-            h2{
-                font-size: 1rem; 
+        width: 45rem;
+        div{
+            width: 45rem;
+            background-color: #c5bbae;
+            border-radius: 1rem;
+    
+            display: flex;
+            align-items: center;
+            iframe{
+                margin: 0.5rem;
+                border-radius: 1rem;
+            }               
+            div{
+                display: flex;
+                flex-direction: column;
+                h2{
+                    text-align: center;
+                    margin: 3rem;
+                    font-size: 1.4rem;
+                }
             }
         }
     }
@@ -316,6 +351,21 @@
             width: 90%;
         }
     }
+
+    .mapa{
+        width: 34rem;
+        div{
+            width: 34rem;
+            iframe{
+                width: 15rem;
+            }               
+            div{
+                h2{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
     /*---------preguntas-------*/
     .accordion{
         .text{
@@ -410,25 +460,17 @@
         }
     }
     .mapa{
-        margin: 1rem;
-        display: flex;
-        justify-content: center;
+        width: 26rem;
         div{
-            background-color: rgb(197, 187, 174);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 70%;
-            border-radius: 1rem; 
-        }
-        iframe{
-            margin: 1rem;
-            border-radius: 1rem;
-        }
-        h2{
-            text-align: center;
-            margin: 1rem;
-            font-size: 1rem;
+            width: 26rem;
+            iframe{
+                height: 22rem;
+                width: 13rem;
+            }               
+            div{
+                h2{
+                }
+            }
         }
     }
     /*---------mi cuenta--------*/
@@ -600,6 +642,23 @@
             font-size: 1rem;
         }
     }
+
+    .mapa{
+        width: 21rem;
+        div{
+            width: 21rem;
+            iframe{
+                height: 22rem;
+                width: 10rem;
+            }               
+            div{
+                h2{
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+
     /*----------preguntas---------*/
     .accordion{
         .text{

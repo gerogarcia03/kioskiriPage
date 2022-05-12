@@ -202,7 +202,7 @@ header {
     animation: efecto_texto 2s; }
 
 .mapa {
-  margin: 2rem 0rem;
+  margin: 5rem 0rem;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -302,6 +302,14 @@ form {
       font-size: 3.5rem; }
     .sobreNosotros p {
       font-size: 1.4rem; }
+  .mapa {
+    margin-left: 1rem;
+    width: 60rem; }
+    .mapa div {
+      width: 60rem; }
+      .mapa div iframe {
+        margin: 0.5rem;
+        border-radius: 1rem; }
   /*--------PREGUNTAS------*/
   .accordion .text {
     text-align: center;
@@ -355,8 +363,24 @@ form {
     font-size: 2.8rem; }
   .sobreNosotros p {
     font-size: 1.2rem; }
-  .mapa .row h2 {
-    font-size: 1rem; }
+  .mapa {
+    width: 45rem; }
+    .mapa div {
+      width: 45rem;
+      background-color: #c5bbae;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center; }
+      .mapa div iframe {
+        margin: 0.5rem;
+        border-radius: 1rem; }
+      .mapa div div {
+        display: flex;
+        flex-direction: column; }
+        .mapa div div h2 {
+          text-align: center;
+          margin: 3rem;
+          font-size: 1.4rem; }
   /*----------trabaja con nosotros---------*/
   .work-us {
     height: 100vh; }
@@ -445,6 +469,14 @@ form {
     .sobreNosotros p {
       font-size: 1rem;
       width: 90%; }
+  .mapa {
+    width: 34rem; }
+    .mapa div {
+      width: 34rem; }
+      .mapa div iframe {
+        width: 15rem; }
+      .mapa div div h2 {
+        font-size: 1rem; }
   /*---------preguntas-------*/
   .accordion .text {
     font-size: 2rem;
@@ -494,23 +526,12 @@ form {
   .productosDestacados div div img {
     height: 9rem; }
   .mapa {
-    margin: 1rem;
-    display: flex;
-    justify-content: center; }
+    width: 26rem; }
     .mapa div {
-      background-color: #c5bbae;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 70%;
-      border-radius: 1rem; }
-    .mapa iframe {
-      margin: 1rem;
-      border-radius: 1rem; }
-    .mapa h2 {
-      text-align: center;
-      margin: 1rem;
-      font-size: 1rem; }
+      width: 26rem; }
+      .mapa div iframe {
+        height: 22rem;
+        width: 13rem; }
   /*---------mi cuenta--------*/
   form {
     width: 25rem; }
@@ -605,6 +626,15 @@ form {
     .sobreNosotros p {
       text-align: center;
       font-size: 1rem; }
+  .mapa {
+    width: 21rem; }
+    .mapa div {
+      width: 21rem; }
+      .mapa div iframe {
+        height: 22rem;
+        width: 10rem; }
+      .mapa div div h2 {
+        font-size: 0.7rem; }
   /*----------preguntas---------*/
   .accordion .text {
     font-size: 1.5rem;
