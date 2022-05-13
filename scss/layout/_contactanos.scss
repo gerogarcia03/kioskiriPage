@@ -16,7 +16,7 @@ form{
     justify-content: center;
 }
 .mb-3{
-    $colores:("label":rgba(165, 42, 42, 0.281), "control":antiquewhite, "text":white);
+    $colores:( "control":antiquewhite, "text":white);
     @each $name, $color in $colores {
         .form-#{$name}{
             background-color: $color;

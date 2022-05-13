@@ -260,8 +260,6 @@ form {
 
 .mb-3 {
   text-align: center; }
-  .mb-3 .form-label {
-    background-color: rgba(165, 42, 42, 0.281); }
   .mb-3 .form-control {
     background-color: antiquewhite; }
   .mb-3 .form-text {
