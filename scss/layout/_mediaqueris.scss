@@ -37,9 +37,9 @@
     }
     /*-------------SOBRE NOSOTROS---------*/
     .sobreNosotros{
-        margin-bottom: 0;
         h2{
-            font-size: 3.5rem;
+            text-align: center;
+            font-size: 3.7rem;
         }
         p{
             font-size: 1.4rem;
@@ -47,34 +47,34 @@
     }
 
     .mapa{
-        margin-left: 1rem;
-        width: 60rem;
         div{
-            width: 60rem;
+            width: 70%;
             iframe{
+                width: 70%;
                 margin: 0.5rem;
                 border-radius: 1rem;
             }               
         }
     }
 
-    /*--------PREGUNTAS------*/
-    .accordion{
-        .text{
-            text-align: center;
-            width: 60rem;
-            font-size: 2.5rem;
-        }
-        .accordion-item{
-            width: 60rem;
-            .accordion-header{
-                .accordion-button{
-                    width: 60rem;
-                }
+
+    /*----------mi cuenta-------------*/
+    .form{
+        .mb-3{
+            .form-control{
+                width: 30rem;
             }
         }
     }
 
+
+    /*--------preguntas------*/
+    .accordion{
+        .text{
+            text-align: center;
+            font-size: 2.5rem;
+        }
+    }
 
 
     /*---------Footer----------*/
@@ -168,15 +168,15 @@
     }
 
     .mapa{
-        width: 45rem;
         div{
-            width: 45rem;
+            width: 70%;
             background-color: #c5bbae;
             border-radius: 1rem;
     
             display: flex;
             align-items: center;
             iframe{
+                width: 70%;
                 margin: 0.5rem;
                 border-radius: 1rem;
             }               
@@ -216,24 +216,11 @@
         .mb-3{
             .form-control{
                 font-size: 0.9rem;
-                width: 40rem;
+                width: 20rem;
             }
         }
     }
     /*--------preguntas-------*/
-    .accordion{
-        .text{
-            width: 40rem;
-        }
-        .accordion-item{
-            width: 40rem;
-            .accordion-header{
-                .accordion-button{
-                    width: 40rem;
-                }
-            }
-        }
-    }
 
     
 
@@ -325,16 +312,7 @@
         }
     }
     /*-----mi cuenta-----*/
-    form{
-        width: 32rem;
-    }
-    .form{
-        .mb-3{
-            .form-control{
-                width: 30rem;
-            }
-        }
-    }
+
     /*-------sobre nosotros-------*/
     .sobreNosotros{
         height: 90vh;
@@ -349,11 +327,10 @@
     }
 
     .mapa{
-        width: 34rem;
         div{
-            width: 34rem;
+            width: 80%;
             iframe{
-                width: 15rem;
+                width: 50%;
             }               
             div{
                 h2{
@@ -366,15 +343,6 @@
     .accordion{
         .text{
             font-size: 2rem;
-            width: 33rem;
-        }
-        .accordion-item{
-            width: 33rem;
-            .accordion-header{
-                .accordion-button{
-                    width: 33rem;
-                }
-            }
         }
     }
 
@@ -455,16 +423,6 @@
             }
         }
     }
-    .mapa{
-        width: 26rem;
-        div{
-            width: 26rem;
-            iframe{
-                height: 22rem;
-                width: 13rem;
-            }               
-        }
-    }
     /*---------mi cuenta--------*/
     form{
         width: 25rem;
@@ -475,10 +433,10 @@
                 font-size: 2rem;
             }
             .form-control{
-                width: 22rem;
+                width: 18rem;
             }
             .form-text{
-                width: 20rem;
+                width: rem;
             }
         }
     }
@@ -493,19 +451,25 @@
             font-size: 1rem;
         }
     }
+
+    .mapa{
+        div{
+            iframe{
+                height: 20rem;
+            }               
+        }
+    }
+
     /*-------preguntas--------*/
     .accordion{
         .text{
             font-size: 1.8rem;
-            width: 25rem;
         }
         .accordion-item{
             font-size: 0.9rem;
-            width: 25rem;
             .accordion-header{
                 .accordion-button{
                     font-size: 0.9rem;
-                    width: 25rem;
                 }
             }
         }
@@ -612,13 +576,13 @@
         }
     }
     /*-------mi cuenta----*/
-    form{
-        width: 21rem;
-    }
     .form{
         .mb-3{
+            .form-text{
+                width: 15rem;
+            }
             .form-control{
-                width: 20rem;    
+                width: 15rem;    
             }
         }
     }
@@ -636,7 +600,6 @@
     }
 
     .mapa{
-        width: 21rem;
         div{
             width: 21rem;
             iframe{
@@ -651,17 +614,17 @@
         }
     }
 
-    /*----------preguntas---------*/
+    /*----preguntas-----*/
     .accordion{
         .text{
             font-size: 1.5rem;
-            width: 20rem;
+        
         }
         .accordion-item{
-            width: 20rem;
+        
             .accordion-header{
                 .accordion-button{
-                    width: 20rem;
+                
                 }
             }
         }
@@ -670,7 +633,6 @@
 
     /*------footer----*/
     footer{
-        width: 101%;
         h4{
             font-size: 0.8rem;
         }

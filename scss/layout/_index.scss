@@ -1,22 +1,18 @@
 /*----------INDEX---------*/
-.main{
-    grid-area: main;
-
-    /*--------CAROUSEL---------*/
-    .carousel-caption{
-        h5{
-            font-size: 3.8rem;
-            text-shadow: 0 0 1rem rgb(0, 0, 0);
-            animation: efecto_texto 2s;
-        }
-        p{
-            @extend .carousel-caption;
-            font-size: 1.7rem;
-        }
+/*--------CAROUSEL---------*/
+.carousel-caption{
+    h5{
+        font-size: 3.8rem;
+        text-shadow: 0 0 1rem rgb(0, 0, 0);
+        animation: efecto_texto 2s;
     }
+    p{
+        @extend .carousel-caption;
+        font-size: 1.7rem;
+    }
+}
     @keyframes efecto_texto {
-        0%{margin-left: -150rem;}
-    }
+    0%{margin-left: -150rem;}
 }
 
 .ofertas{
@@ -66,17 +62,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5rem 0;
+    margin: 5rem;
     .card{
-        display: flex;
-        align-items: center;
-        justify-content:center;
         height: 30rem;
         background-color: rgb(197, 187, 174);
         border-radius: 1rem;
         .row{
             .img-fluid{
                 height: 30rem;
+                width: 50rem;
             }
         }
     }
@@ -91,6 +85,9 @@
             font-weight: 400;
             margin-bottom: 2rem;
             button{
+                border: 0px;
+                background-color: antiquewhite;
+                color: black;
                 font-weight: bold;
             }
         }

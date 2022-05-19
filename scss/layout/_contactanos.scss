@@ -1,37 +1,47 @@
 /*-----------CONTACTANOS---------*/
-form{
-    margin-top: 6rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 52rem;
-    height: 28rem;
-    color: black;
-    background-color: rgb(197, 187, 174);
-}
 .form{
     margin-bottom: 5rem;
     display: flex;
     justify-content: center;
-}
-.mb-3{
-    $colores:( "control":antiquewhite, "text":white);
-    @each $name, $color in $colores {
-        .form-#{$name}{
-            background-color: $color;
+    form{
+        margin-top: 6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        height: 28rem;
+        color: black;
+        background-color: rgb(197, 187, 174);
+        .btn{
+            background-color: antiquewhite;
+            border: 0px;
+            color: black;
         }
     }
-    text-align: center;
-    .form-label{
-        font-size: 2.5rem;
-        margin-bottom: 3rem;
-    }
-    .form-control{
-        height: 2rem;
-        width: 45rem;
-    }
-    .form-text{
-        margin: 0rem;
+    .mb-3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        $colores:( "control":antiquewhite, "text":white);
+        @each $name, $color in $colores {
+            .form-#{$name}{
+                background-color: $color;
+            }
+        }
+        text-align: center;
+        .form-label{
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+        .form-control{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 40rem;
+            height: 2rem;
+        }
     }
 }
