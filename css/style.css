@@ -66,13 +66,14 @@ header {
       align-items: center;
       flex-direction: column;
       border-radius: 15px;
-      box-shadow: 10px 10px 21px -6px #000001;
+      box-shadow: 10px 10px 21px -15px #000001;
       transition: 1s; }
       .ofertas div div:hover {
         transform: scale(1.1); }
       .ofertas div div p {
         font-size: 1.5rem; }
       .ofertas div div img {
+        padding: 0 2rem;
         height: 12rem;
         width: fit-content; }
       .ofertas div div .carrito {
@@ -134,12 +135,13 @@ header {
       flex-direction: column;
       padding: 10px;
       border-radius: 15px;
-      box-shadow: 10px 10px 21px -6px #000001;
+      box-shadow: 10px 10px 21px -15px #000001;
       transition: 1s; }
       .productosDestacados div div:hover {
         transform: scale(1.1); }
       .productosDestacados div div img {
-        width: 11rem;
+        padding: 0 1rem;
+        width: fit-content;
         height: 11rem; }
       .productosDestacados div div h3 {
         font-size: 1.4rem; }

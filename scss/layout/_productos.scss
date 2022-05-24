@@ -29,7 +29,7 @@
             flex-direction: column;
             padding: 10px;
             border-radius: 15px;
-            box-shadow: 10px 10px 21px -6px rgb(0, 0, 0.75);
+            box-shadow: 10px 10px 21px -15px rgb(0, 0, 0.75);
             transition: 1s;
             &:hover{
                 transform: scale(1.1);
@@ -41,7 +41,8 @@
             }
 
             img{
-                @include formateo(11rem, 11rem);
+                padding: 0 1rem;
+                @include formateo(11rem, fit-content);
             }
             h3{
                 font-size: 1.4rem;
