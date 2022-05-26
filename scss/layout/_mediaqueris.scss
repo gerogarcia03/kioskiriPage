@@ -237,6 +237,15 @@
             }
         }
     }
+    .footer-list{
+        ul{
+            li{
+                a{
+                    font-size: 0.8rem
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:576px){
@@ -562,6 +571,18 @@
             }
         }
     }
+
+
+    /*------trabaj con nosotros---------*/
+    .work-us{
+        height: 75rem;
+        .card{
+            height: 75rem;
+        }
+    }
+
+
+
     /*-----productos-----*/
     .productosDestacados{
         div{
@@ -619,14 +640,6 @@
         .text{
             font-size: 1.5rem;
         
-        }
-        .accordion-item{
-        
-            .accordion-header{
-                .accordion-button{
-                
-                }
-            }
         }
     }
 

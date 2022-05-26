@@ -5,9 +5,13 @@ footer{
     justify-content: center;
     background-color: rgb(197, 187, 174);
     grid-area: footer;
+    padding-bottom: 1rem;
     div{
         text-align: center;
         padding-top: 2rem;
+    }
+    p{
+        width: 60%;
     }
     h4{
         font-size: 1.4rem;
@@ -22,12 +26,29 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-right: 2rem;
         h2{
             font-size: 1.5rem;
         }
         .logoFooter{
             width: 5rem;
             height: 3rem;
+        }
+    }
+    .footer-list{
+        margin-bottom: 3rem;
+        margin-left: 2rem;
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            li{
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
         }
     }
 }

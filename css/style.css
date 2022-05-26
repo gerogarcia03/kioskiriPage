@@ -13,6 +13,9 @@ body {
   grid-template-rows: 0.1fr auto 0.1fr;
   grid-template-areas: "header"   "main" "footer"; }
 
+html {
+  scroll-behavior: smooth; }
+
 header {
   background-color: #c5bbae;
   display: flex;
@@ -210,7 +213,7 @@ header {
     font-size: 3rem;
     width: 80%; }
   .accordion .accordion-item {
-    margin: 0.4rem;
+    margin: 0.4rem 0;
     background-color: #c5bbae;
     width: 80%; }
     .accordion .accordion-item .accordion-header .accordion-button {
@@ -219,6 +222,7 @@ header {
 
 /*-----------CONTACTANOS---------*/
 .form {
+  margin-top: 5rem;
   margin-bottom: 5rem;
   display: flex;
   justify-content: center;
@@ -378,7 +382,9 @@ header {
   footer div h4 {
     font-size: 1.2rem; }
   footer .bases h2 {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .footer-list ul li a {
+    font-size: 0.8rem; } }
 
 @media screen and (max-width: 576px) {
   /*---------header--------*/
@@ -559,6 +565,11 @@ header {
     font-size: 1rem; }
   .ofertas div div p {
     font-size: 1rem; }
+  /*------trabaj con nosotros---------*/
+  .work-us {
+    height: 75rem; }
+    .work-us .card {
+      height: 75rem; }
   /*-----productos-----*/
   .productosDestacados div div h2 {
     font-size: 2rem; }
@@ -602,10 +613,13 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: #c5bbae;
-  grid-area: footer; }
+  grid-area: footer;
+  padding-bottom: 1rem; }
   footer div {
     text-align: center;
     padding-top: 2rem; }
+  footer p {
+    width: 60%; }
   footer h4 {
     font-size: 1.4rem; }
   footer img {
@@ -616,9 +630,21 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    margin-right: 2rem; }
     footer .bases h2 {
       font-size: 1.5rem; }
     footer .bases .logoFooter {
       width: 5rem;
       height: 3rem; }
+  footer .footer-list {
+    margin-bottom: 3rem;
+    margin-left: 2rem; }
+    footer .footer-list ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start; }
+      footer .footer-list ul li a {
+        text-decoration: none;
+        color: black; }
