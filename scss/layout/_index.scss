@@ -51,9 +51,15 @@
                 height: 12rem;
                 width: fit-content;
             }
-            .carrito{
-                width: 2rem;
-                height: 2rem;
+        
+            button{
+                background-color: transparent;
+                border: 0px;
+                .carrito{
+                    width: 6rem;
+                    height: 2rem;
+
+                }
             }
         }
     }

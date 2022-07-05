@@ -79,9 +79,12 @@ header {
         padding: 0 2rem;
         height: 12rem;
         width: fit-content; }
-      .ofertas div div .carrito {
-        width: 2rem;
-        height: 2rem; }
+      .ofertas div div button {
+        background-color: transparent;
+        border: 0px; }
+        .ofertas div div button .carrito {
+          width: 6rem;
+          height: 2rem; }
 
 /*----------------TRABAJA CON NOSOTROS---------*/
 .work-us {
@@ -143,6 +146,8 @@ header {
       .productosDestacados div div:hover {
         transform: scale(1.1); }
       .productosDestacados div div img {
+        width: 2rem;
+        height: 2rem;
         padding: 0 1rem;
         width: fit-content;
         height: 11rem; }
@@ -151,9 +156,12 @@ header {
       .productosDestacados div div p {
         margin: 0.5rem;
         font-size: 1.2rem; }
-      .productosDestacados div div .carrito {
-        height: 2rem;
-        width: 2rem; }
+      .productosDestacados div div button {
+        background-color: transparent;
+        border: 0px; }
+        .productosDestacados div div button .carrito {
+          width: 4rem;
+          height: 2rem; }
 
 /*---------------SOBRE NOSOTROS---------*/
 .sobreNosotros {

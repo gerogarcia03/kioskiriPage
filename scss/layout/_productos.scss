@@ -41,6 +41,8 @@
             }
 
             img{
+                width: 2rem;
+                height: 2rem;
                 padding: 0 1rem;
                 @include formateo(11rem, fit-content);
             }
@@ -51,10 +53,16 @@
                 margin: 0.5rem;
                 font-size: 1.2rem;
             }
-            .carrito{
-                height: 2rem;
-                width: 2rem;
+            button{
+                background-color: transparent;
+                border: 0px;
+                .carrito{
+                    width: 4rem;
+                    height: 2rem;
+
+                }
             }
+                    
         }
     }
 }
