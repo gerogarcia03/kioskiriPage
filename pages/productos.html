@@ -52,12 +52,33 @@
                 </svg></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link"  href="../pages/carrito.html">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(126, 124, 124)" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
                   </svg>
-                </a>
-            </li>
+                  </button>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div id="contenidoCarrito">
+                        
+                      </div>
+                      <div class="modal-body">
+                        <p>Precio: $ <span id="precio"></span></p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Aceptar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
         </nav>
@@ -78,53 +99,16 @@
       </div>
       </div>
     </header>
+
     <main class="main">
-      <section>
+    
+      <section class="col-xxl-12">
         <div class="productosDestacados">
-          <h2>PRODUCTOS DESTACADOS</h2>
-          <div class="col-xxl-12">
+          <h2>¡TODOS NUESTROS PRODUCTOS DISPONIBLES!</h2>
+          <div id="productos">
+    
 
-            <div id="productos">
-              <img src="../images/coca500.png" alt="coca 500">
-              <h3>Coca-Cola 500ml</h3>
-              <p>$70</p>
-              <button>
-                <img class="carrito" src="../images/carritocompras.png" alt="carrito compras">
-              </button>
-            </div>
-
-            <div id="productos">
-              <img src="../images/pepsi1lt.png" alt="pepsi 1lt"/>
-              <h3>Pepsi 1lt</h3>
-              <p>$120</p>
-              <button>
-                <img class="carrito" src="../images/carritocompras.png" alt="carrito compras">
-              </button>
-            </div>
-            
-            <div id="productos">
-              <img src="../images/6packcoca1lt.png" alt="6pack coca 1lt">
-              <h3>6 Pack Coca-Cola</h3>
-              <p>$450</p>
-                <button>
-                <img class="carrito" src="../images/carritocompras.png" alt="carrito compras">
-              </button>
-            </div>
-
-            <div id="productos">
-              <img src="../images/pepsi6pack.png" alt="pepsi 6pack 1lt">
-              <h3>6 Pack Pepsi</h3>
-              <p>$420</p>
-                <button>
-                <img class="carrito" src="../images/carritocompras.png" alt="carrito compras">
-              </button>
-            </div>
-          </div>
-
-          <h2>BEBIDAS</h2>
-          <div class="col-xxl-12">
-
-            <div id="productos">
+            <!-- <div class="productos">
               <img src="../images/coca500.png" alt="coca 500">
               <h3>Coca-Cola 500ml</h3>
               <p>$70</p>
@@ -142,7 +126,7 @@
               </button>
             </div>
 
-            <div id="productos">
+            <div class="productos">
               <img src="../images/6packcoca1lt.png" alt="">
               <h3>6 Pack Coca-Cola</h3>
               <p>$450</p>
@@ -150,12 +134,13 @@
                 <img class="carrito" src="../images/carritocompras.png" alt="carrito compras">
               </button>
             </div>
-          </div>
+           </div>-->
 
-          <h2>GALLETITAS</h2>
-          <div class="col-xxl-12">
+          
 
-            <div id="productos">
+           <!-- <div class="col-xxl-12">
+
+            <div class="productos">
               <img src="../images/surtidobagley.png" alt="">
               <h3>Surtido Bagley</h3>
               <p>$160</p>
@@ -164,7 +149,7 @@
               </button>
             </div>
 
-            <div id="productos">
+            <div class="productos">
               <img src="../images/sonrisas.png" alt="sonrisas">
               <h3>Sonrisas</h3>
               <p>$80</p>
@@ -173,7 +158,7 @@
               </button>
             </div>
             
-            <div id="productos">
+            <div class="productos">
               <img src="../images/melba.png" alt="melba">
               <h3>Melba</h3>
               <p>$100</p>
@@ -181,12 +166,12 @@
                 <img class="carrito" src="../images/carritocompras.png" alt="carrito compras">
               </button>
             </div>
-          </div>
+           </div> -->
 
-          <h2>GOLOSINAS</h2>
-          <div class="col-xxl-12">
+         
+           <!-- <div class="col-xxl-12">
 
-            <div id="productos">
+            <div class="productos">
               <img src="../images/beldent14.png" alt="belden14">
               <h3>Beldent Infinit 14 WowMint</h3>
               <p>$80</p>
@@ -195,7 +180,7 @@
               </button>
             </div>
 
-            <div id="productos">
+            <div class="productos">
               <img src="../images/belden14blueberry.png" alt="belden14blueberry">
               <h3>Beldent Infinit 14 BlueBerry</h3>
               <p>$80</p>
@@ -204,7 +189,7 @@
               </button>
             </div>
 
-            <div id="productos">
+            <div class="productos">
               <img src="../images/spearmint.png" alt="spearmint">
               <h3>Spearmint</h3>
               <p>$80</p>
@@ -212,12 +197,12 @@
                 <img class="carrito" src="../images/carritocompras.png" alt="carrito compras">
               </button>
             </div>
-          </div>
+           </div> -->
 
-          <h2>SNACKS</h2>
-          <div class="col-xxl-12">
+        
+           <!-- <div class="col-xxl-12">
 
-            <div id="productos">
+            <div class="productos">
               <img src="../images/lays140.png" alt="lays140">
               <h3>Lays 140gr</h3>
               <p>$80</p>
@@ -226,7 +211,7 @@
               </button>
             </div>
 
-            <div id="productos">
+            <div class="productos">
               <img src="../images/laysjamon.png" alt="lays jamon">
               <h3>Lays Jamon Serrano 85gr</h3>
               <p>$90</p>
@@ -235,14 +220,14 @@
               </button>
             </div>
 
-            <div id="productos">
+            <div class="productos">
               <img src="../images/krachitos120.png" alt="">
               <h3>Palitos Salados120gr</h3>
               <p>$50</p>
                 <button>
                 <img class="carrito" src="../images/carritocompras.png" alt="carrito compras">
               </button>
-            </div>
+            </div>-->
           </div>
         </div>
       </section>
@@ -272,5 +257,6 @@
   </footer>
   </div>
   <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/cart.js"></script>
 </body>
 </html>

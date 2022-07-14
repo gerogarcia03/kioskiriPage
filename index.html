@@ -50,8 +50,8 @@
                     </svg></a>
                   </li>
                   <li class="nav-item">
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" fill="black" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(126, 124, 124)" class="bi bi-cart-fill" viewBox="0 0 16 16">
                       <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
                     </svg>
                     </button>
@@ -63,8 +63,11 @@
                           <h5 class="modal-title" id="exampleModalLabel">No ha seleccionado ningun producto</h5>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
+                        <div id="contenidoCarrito">
+                          
+                        </div>
                         <div class="modal-body">
-                          ...
+                          <p>Precio: $ <span id="precio"></span></p>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -136,35 +139,14 @@
           </div>
         </section>
 
+        
+
         <section class="ofertas">
                 <h2>OFERTAS</h2>
-                <div class="col-xxl-12">
-                    <div class="productos">
-                        <img src="images/coca500.png" alt="coca500">
-                        <h3>Coca-Cola 500ml</h3>
-                        <p>$70</p>
-                        <button id="agregar">
-                        <img class="carrito" src="images/carritocompras.png" alt="carrito">
-                        </button>
-                    </div>
-                    <div class="productos">
-                        <img src="images/pepsi1lt.png" alt="pepsi 1lt">
-                        <h3>Pepsi 1lt</h3>
-                        <p>$120</p>
-                        <button id="agregar">
-                          <img class="carrito" src="images/carritocompras.png" alt="carrito">
-                          </button>
-                    </div>
-                    <div class="productos">
-                        <img src="images/lays140.png" alt="lays 140gr">
-                        <h3>Lays 140gr</h3>
-                        <p>$80</p>
-                        <button id="agregar">
-                          <img class="carrito" src="images/carritocompras.png" alt="carrito">
-                          </button>
-                    </div>
-                </div>
+                <div id="productos" class="col-xxl-12">
         </section>
+
+
 
         <section class="form">
           <form id="contactanos">
@@ -230,8 +212,7 @@
     </footer>
   </div>
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/carrito.js"></script>
+  <script src="js/index.js"></script>
 
 </body>
 </html>

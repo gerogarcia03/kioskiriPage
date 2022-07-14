@@ -48,6 +48,16 @@ header {
   0% {
     margin-left: -150rem; } }
 
+.prodEnCart {
+  display: flex;
+  justify-content: space-around;
+  border: 0.1rem solid grey;
+  margin: 1rem; }
+  .prodEnCart .deleteButton {
+    border: 0rem;
+    color: red;
+    background-color: transparent; }
+
 .ofertas {
   background-color: antiquewhite;
   padding-top: 1rem;
@@ -64,25 +74,25 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     justify-content: space-around; }
-    .ofertas div div {
+    .ofertas div .productos {
       display: flex;
       align-items: center;
       flex-direction: column;
       border-radius: 15px;
       box-shadow: 10px 10px 21px -15px #000001;
-      transition: 1s; }
-      .ofertas div div:hover {
+      transition: 0.3s; }
+      .ofertas div .productos:hover {
         transform: scale(1.1); }
-      .ofertas div div p {
+      .ofertas div .productos p {
         font-size: 1.5rem; }
-      .ofertas div div img {
+      .ofertas div .productos img {
         padding: 0 2rem;
         height: 12rem;
         width: fit-content; }
-      .ofertas div div button {
+      .ofertas div .productos button {
         background-color: transparent;
         border: 0px; }
-        .ofertas div div button .carrito {
+        .ofertas div .productos button .carrito {
           width: 6rem;
           height: 2rem; }
 
@@ -114,54 +124,47 @@ header {
       font-weight: bold; }
 
 /*------------PRODUCTOS DESTACADOS---------*/
-.productosDestacados {
-  margin-bottom: 3rem; }
-  .productosDestacados h2 {
-    margin-top: 3rem;
-    font-weight: bold;
-    text-align: center;
-    border: 0.1rem solid grey;
-    border-bottom: 0;
-    border-left: 0;
-    border-right: 0;
-    font-size: 3rem;
-    height: 10rem;
-    text-align: center;
-    transition: all 0.5s ease 0s; }
-    .productosDestacados h2:hover {
-      font-size: 3.5rem; }
-  .productosDestacados div {
+.productosDestacados h2 {
+  text-align: center;
+  margin: 2rem;
+  font-weight: bold;
+  font-size: 3rem;
+  padding: 2rem;
+  border-bottom: 0.1rem solid grey; }
+
+.productosDestacados div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem; }
+  .productosDestacados div div {
+    min-width: 17rem;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    justify-content: space-around; }
-    .productosDestacados div div {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      padding: 10px;
-      border-radius: 15px;
-      box-shadow: 10px 10px 21px -15px #000001;
-      transition: 1s; }
-      .productosDestacados div div:hover {
-        transform: scale(1.1); }
-      .productosDestacados div div img {
-        width: 2rem;
-        height: 2rem;
-        padding: 0 1rem;
-        width: fit-content;
-        height: 11rem; }
-      .productosDestacados div div h3 {
-        font-size: 1.4rem; }
-      .productosDestacados div div p {
-        margin: 0.5rem;
-        font-size: 1.2rem; }
-      .productosDestacados div div button {
-        background-color: transparent;
-        border: 0px; }
-        .productosDestacados div div button .carrito {
-          width: 4rem;
-          height: 2rem; }
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 21px -15px #000001;
+    transition: 0.3s; }
+    .productosDestacados div div:hover {
+      transform: scale(1.1); }
+    .productosDestacados div div img {
+      width: 2rem;
+      height: 2rem;
+      padding: 0 1rem;
+      width: fit-content;
+      height: 11rem; }
+    .productosDestacados div div h3 {
+      font-size: 1.4rem; }
+    .productosDestacados div div p {
+      margin: 0.5rem;
+      font-size: 1.2rem; }
+    .productosDestacados div div button {
+      background-color: transparent;
+      border: 0px; }
+      .productosDestacados div div button .carrito {
+        width: 4rem;
+        height: 2rem; }
 
 /*---------------SOBRE NOSOTROS---------*/
 .sobreNosotros {

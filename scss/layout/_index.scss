@@ -15,6 +15,20 @@
     0%{margin-left: -150rem;}
 }
 
+
+.prodEnCart{
+    display: flex;
+    justify-content: space-around;
+    border: 0.1rem solid grey;
+    margin: 1rem;
+    .deleteButton{
+        border: 0rem;
+        color:red;
+        background-color: transparent;
+    }
+}
+
+
 .ofertas{
     background-color: rgb(250, 235, 215);
     padding-top: 1rem;
@@ -33,13 +47,13 @@
         justify-content: center;
         flex-wrap: wrap;
         justify-content: space-around;
-        div{
+        .productos{
             display: flex;
             align-items: center;
             flex-direction: column;
             border-radius: 15px;
             box-shadow: 10px 10px 21px -15px rgb(0, 0, 0.75);
-            transition: 1s;
+            transition: 0.3s;
             &:hover{
                 transform: scale(1.1);
             }
