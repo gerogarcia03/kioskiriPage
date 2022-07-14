@@ -1,6 +1,6 @@
-const stockProductos = [{id: 1, name: `Coca-Cola 500`, price: 70, cantidad: 1, img: `../images/coca500.png`},
-                        {id: 2, name: `Pepsi 1lt`, price: 120, cantidad: 1, img: `../images/pepsi1lt.png`},
-                        {id: 3, name: `Lays 140gr`, price: 80, cantidad: 1, img: `../images/lays140.png`},
+const stockProductos = [{id: 1, name: `Coca-Cola 500`, price: 70, cantidad: 1, img: `images/coca500.png`},
+                        {id: 2, name: `Pepsi 1lt`, price: 120, cantidad: 1, img: `images/pepsi1lt.png`},
+                        {id: 3, name: `Lays 140gr`, price: 80, cantidad: 1, img: `images/lays140.png`},
 ];
 
 const productos = document.getElementById(`productos`);
@@ -28,7 +28,7 @@ stockProductos.forEach ((producto) => {
     <img src=${producto.img}>
     <h3> ${producto.name}</h3>
     <p> ${producto.price}</p>
-    <button id="agregar ${producto.id}"><img class="carrito" src= "../images/carritocompras.png"</button>
+    <button id="agregar ${producto.id}"><img class="carrito" src= "images/carritocompras.png"</button>
     `
     productos.appendChild(div)
     
