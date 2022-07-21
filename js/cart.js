@@ -48,8 +48,12 @@ stock.forEach ((stock) => {
     const boton = document.getElementById(`agregar ${stock.id}`)
 
     boton.addEventListener(`click`, () => {
+
         addToCart(stock.id)
-        
+        swal.fire({
+            title: `Tu producto ha sido añadido al carrito`,
+            icon: `success`,
+        })
     })
 
 }) 
