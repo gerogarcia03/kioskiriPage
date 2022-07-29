@@ -1,7 +1,3 @@
-const stockProductos = [{id: 1, name: `Coca-Cola 500`, price: 70, cantidad: 1, img: `./images/coca500.png`},
-                        {id: 2, name: `Pepsi 1lt`, price: 120, cantidad: 1, img: `./images/pepsi1lt.png`},
-                        {id: 3, name: `Lays 140gr`, price: 80, cantidad: 1, img: `./images/lays140.png`},
-];
 
 const productos = document.getElementById(`productos`);
 
@@ -19,9 +15,18 @@ document.addEventListener(`DOMContentLoaded`, () => {
     }
 })
 
-//------------------------------
 
-stockProductos.forEach ((producto) => {
+const stockProductos = [
+fetch("/stock2.json")
+    .then( (response) => response.json() )
+    .then( (stock) => {
+        mostrarProd(stock)
+    })
+]
+
+//------------------------------
+function mostrarProd(stock){
+stock.forEach ((producto) => {
     const div = document.createElement(`div`);
     div.classList.add(`productos`);
     div.innerHTML = `
@@ -45,6 +50,7 @@ stockProductos.forEach ((producto) => {
 
 
 }) 
+}
 
 function addToCart (prodId) {
 
