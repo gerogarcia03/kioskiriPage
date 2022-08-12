@@ -73,9 +73,9 @@ function actualizarCart() {
     const div2 = document.createElement(`div`);
     div2.classList.add(`prodEnCart`);
     div2.innerHTML = `
-        <p>${prod.name}</p>
-        <p> Precio: ${prod.price}</p>
-        <p> Cantidad: ${prod.cantidad}</p>
+        <p> <strong> ${prod.name} </strong> </p>
+        <p> <strong> Precio: </strong> ${prod.price}</p>
+        <p> <strong> Cantidad: </strong> ${prod.cantidad}</p>
         
         <button onclick="restarCantidad (${prod.id})" class="cant"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
         <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
@@ -106,16 +106,23 @@ function actualizarCart() {
 
 function eliminarProd (prodId) {
     
-  const prod = carrito.find ((prod) => prod.id === prodId);
-  const indice = carrito.indexOf(prod);
-  carrito.splice (indice, 1);
-  
   swal.fire({
-    title: `Su producto va a ser eliminado`,
-    icon: `info`,
-    
-  });
+    title: '¿Desea eliminar el producto?',
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Yes, delete it!'
+  }) .then(( result)  => {
+    if( result.isConfirmed ){
+      
+      const prod = carrito.find((prod) => prod.id === prodId)
+      const indice = carrito.indexOf(prod)
+      carrito.splice(indice, 1)
 
+    }
+    actualizarCart();
+  })
   actualizarCart();
 }
 
@@ -150,12 +157,22 @@ function restarCantidad(prodId) {
       if(prod.cantidad <= 0){
 
         swal.fire({
-          title: `Su producto va a ser eliminado`,
-          icon: `info`,
-        });
-        const prod = carrito.find((prod) => prod.id === prodId)
-        const i = carrito.indexOf(prod)
-        carrito.splice(i, 1)
+          title: '¿Desea eliminar el producto?',
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+          if(result.isConfirmed){
+            
+            const prod = carrito.find((prod) => prod.id === prodId)
+            const i = carrito.indexOf(prod)
+            carrito.splice(i, 1)
+
+          }
+          actualizarCart();
+        })
       }
       }
     })

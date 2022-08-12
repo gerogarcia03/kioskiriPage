@@ -99,12 +99,22 @@ function actualizarCart() {
 function eliminarCarrito(prodId) {
 
   swal.fire({
-    title: `Su producto va a ser eliminado`,
-    icon: `info`, 
-  });
-  const prod = carrito.find((prod) => prod.id === prodId);
-  const indice = carrito.indexOf(prod);
-  carrito.splice(indice, 1);
+    title: '¿Desea eliminar el producto?',
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Yes, delete it!'
+  }) .then(( result)  => {
+    if( result.isConfirmed ){
+      
+      const prod = carrito.find((prod) => prod.id === prodId)
+      const indice = carrito.indexOf(prod)
+      carrito.splice(indice, 1)
+
+    }
+    actualizarCart();
+  })
 
   actualizarCart();
 }
@@ -140,12 +150,22 @@ function restarCantidad(prodId) {
       if(prod.cantidad <= 0){
 
         swal.fire({
-          title: `Su producto va a ser eliminado`,
-          icon: `info`,
-        });
-        const prod = carrito.find((prod) => prod.id === prodId)
-        const i = carrito.indexOf(prod)
-        carrito.splice(i, 1)
+          title: '¿Desea eliminar el producto?',
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+          if(result.isConfirmed){
+            
+            const prod = carrito.find((prod) => prod.id === prodId)
+            const i = carrito.indexOf(prod)
+            carrito.splice(i, 1)
+
+          }
+          actualizarCart();
+        })
       }
       }
     })

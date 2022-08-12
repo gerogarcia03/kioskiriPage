@@ -95,6 +95,12 @@
 
 
 
+
+
+
+/*-------------------------------*/
+
+
 @media screen and (max-width: 768px){
     header{
         .navbar{
@@ -246,7 +252,20 @@
             }
         }
     }
+
+    
+
+    .modal-content{
+        font-size: 1rem;
+    }
 }
+
+
+
+
+
+
+
 
 @media screen and (max-width:576px){
     /*---------header--------*/
@@ -364,7 +383,19 @@
             height: 70rem;
         }
     }
+
+    .modal-content{
+        width: 12rem;
+    }
+
 }
+
+
+
+
+
+
+
 
 @media screen and (max-width:450px){
     header{
