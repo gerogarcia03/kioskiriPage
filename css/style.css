@@ -21,6 +21,9 @@ header {
   display: flex;
   flex-wrap: wrap;
   grid-area: header; }
+  header .logo {
+    margin-left: 3rem;
+    padding-bottom: 1rem; }
   header .navbar-nav {
     column-gap: 1rem; }
     header .navbar-nav li a {
@@ -57,6 +60,9 @@ header {
     border: 0rem;
     color: red;
     background-color: transparent; }
+  .prodEnCart .cant {
+    background-color: transparent;
+    border: 0rem; }
 
 .ofertas {
   background-color: antiquewhite;
@@ -159,12 +165,9 @@ header {
     .productosDestacados div div p {
       margin: 0.5rem;
       font-size: 1.2rem; }
-    .productosDestacados div div button {
-      background-color: transparent;
-      border: 0px; }
-      .productosDestacados div div button .carrito {
-        width: 4rem;
-        height: 2rem; }
+    .productosDestacados div div .carrito {
+      width: 4rem;
+      height: 2rem; }
 
 /*---------------SOBRE NOSOTROS---------*/
 .sobreNosotros {
@@ -617,6 +620,16 @@ header {
     font-size: 1rem; }
   footer .bases p {
     font-size: 0.6rem; } }
+
+button {
+  background-color: transparent;
+  border: 0px; }
+  button .carrito {
+    width: 4rem;
+    height: 2rem; }
+
+.cant {
+  border: 2rem; }
 
 footer {
   display: flex;
