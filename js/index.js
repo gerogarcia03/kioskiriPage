@@ -37,7 +37,7 @@ const stockProductos = fetch("/stock2.json")
           
           const Toast = Swal.mixin({
             toast: true,
-            position: 'bottom-right',
+            position: 'top',
             showConfirmButton: false,
             timer: 1500,
             background: `antiquewhite`,
