@@ -82,6 +82,10 @@
         }
     }
 }
+
+.swal2-container.swal2-backdrop-show, .swal2-container.swal2-noanimation {
+    background: rgba(34, 34, 34, 0.99);
+  }
 /*----------------TRABAJA CON NOSOTROS---------*/
 .work-us{
     display: flex;

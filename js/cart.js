@@ -33,7 +33,20 @@ const stock = fetch("/stock.json")
 
         boton.addEventListener(`click`, () => {
           addToCart(stock.id);
-          swal.fire({
+
+          const Toast = Swal.mixin({
+            toast: true,
+            position: 'bottom-right',
+            showConfirmButton: false,
+            timer: 1500,
+            background: `antiquewhite`,
+            didOpen: (toast) => {
+              toast.addEventListener('mouseenter', Swal.stopTimer)
+              toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+          });
+          
+          Toast.fire({
             title: `Tu producto ha sido añadido al carrito`,
             icon: `success`,
           });
@@ -156,6 +169,7 @@ function restarCantidad(prodId) {
 
       if(prod.cantidad <= 0){
 
+        prod.cantidad++;
         swal.fire({
           title: '¿Desea eliminar el producto?',
           icon: 'warning',
