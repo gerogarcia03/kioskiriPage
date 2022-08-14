@@ -24,7 +24,7 @@ const stockProductos = fetch("/stock2.json")
         div.innerHTML = `
     <img src=${producto.img}>
     <h3> ${producto.name}</h3>
-    <p> ${producto.price}</p>
+    <p> $${producto.price}</p>
     <button id="agregar ${producto.id}"><img class="carrito" src= "images/carritocompras.png"</button>
     `;
         productos.appendChild(div);
@@ -117,7 +117,7 @@ function eliminarCarrito(prodId) {
     showCancelButton: true,
     confirmButtonColor: '#3085d6',
     cancelButtonColor: '#d33',
-    confirmButtonText: 'Yes, delete it!'
+    confirmButtonText: 'Eliminar'
   }) .then(( result)  => {
     if( result.isConfirmed ){
       
@@ -169,7 +169,7 @@ function restarCantidad(prodId) {
           showCancelButton: true,
           confirmButtonColor: '#3085d6',
           cancelButtonColor: '#d33',
-          confirmButtonText: 'Yes, delete it!'
+          confirmButtonText: 'Eliminar'
         }).then((result) => {
           if(result.isConfirmed){
             
