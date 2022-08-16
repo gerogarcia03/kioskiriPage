@@ -25,7 +25,7 @@ const stockProductos = fetch("/stock2.json")
     <img src=${producto.img}>
     <h3> ${producto.name}</h3>
     <p> $${producto.price}</p>
-    <button id="agregar ${producto.id}"><img class="carrito" src= "images/carritocompras.png"</button>
+    <button id="agregar ${producto.id}"><img class="carrito" src= "images/carritocompras.jpg"</button>
     `;
         productos.appendChild(div);
 

@@ -25,7 +25,7 @@ const stock = fetch("/stock.json")
     <img src=${stock.img}>
     <h3> ${stock.name}</h3>
     <p> $${stock.price}</p>
-    <button id="agregar ${stock.id}"><img class="carrito" src= "../images/carritocompras.png"</button>
+    <button id="agregar ${stock.id}"><img class="carrito" src= "../images/carritocompras.jpg"</button>
     `;
         productos.appendChild(div);
 
@@ -36,7 +36,7 @@ const stock = fetch("/stock.json")
 
           const Toast = Swal.mixin({
             toast: true,
-            position: 'bottom-right',
+            position: 'top',
             showConfirmButton: false,
             timer: 1500,
             background: `antiquewhite`,
@@ -125,7 +125,7 @@ function eliminarProd (prodId) {
     showCancelButton: true,
     confirmButtonColor: '#3085d6',
     cancelButtonColor: '#d33',
-    confirmButtonText: 'Yes, delete it!'
+    confirmButtonText: 'Eliminar'
   }) .then(( result)  => {
     if( result.isConfirmed ){
       
@@ -176,7 +176,7 @@ function restarCantidad(prodId) {
           showCancelButton: true,
           confirmButtonColor: '#3085d6',
           cancelButtonColor: '#d33',
-          confirmButtonText: 'Yes, delete it!'
+          confirmButtonText: 'Eliminar'
         }).then((result) => {
           if(result.isConfirmed){
             
